@@ -1,6 +1,10 @@
 
 body{
-    background-color: #5b197b;
+    background-color: #654073;
+    width: 1366px;
+    height: 1768px;
+    margin: 50px;
+    padding: 20px;
 }
 
 nav{
@@ -8,13 +12,47 @@ nav{
     color: white;
 }
 
-#titulo{
+.titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+    text-align: center;
     color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 #QueEs{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    text-align: center;
+    background-color: #977fa3;
+    width: 1000px;
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    left: 000px;
+}
+
+#cuadro_organzanizaciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.organizacion{
+    background-color: #977fa3;
+    width: 1000px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+}
+
+a{
+    text-decoration: none;
 }
