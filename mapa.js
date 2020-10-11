@@ -163,6 +163,6 @@ $(document).ready(function(){
         $("#XIV").css("fill","#D0D3D4");
         $("#XV").css("fill","#D0D3D4");
         $("#XVI").css("fill","#D0D3D4");
-        b=false}
+        b4=false}
   })
 })
