@@ -1,12 +1,13 @@
-$(document).ready(function(){
+
+$(document).ready(function () {
     var regiones = $(".region");
     regiones.mouseenter(function(){
         var idregion = $(this).attr("title");
-        $("#titulo").text(idregion);
+        $("#titulo_mapa").text(idregion);
         $(this).fadeTo("fast", 0.5);
     });
     regiones.mouseleave(function(){
-        $("#titulo").text("Mapa de Chile");
+        $("#titulo_mapa").text("Mapa de Chile");
         $(this).fadeTo("fast", 1);
     });
     var b = false;
