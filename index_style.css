@@ -51,8 +51,37 @@ nav{
     padding: 10px;
     position: relative;
     top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 a{
     text-decoration: none;
+}
+
+#definiciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 1000px;
+    height: 250px;
+    margin: 30px;
+    padding: 10px;
+}
+.texto_def{
+    background-color: #977fa3;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size:12px;
+}
+
+.subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.parr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
