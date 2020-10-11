@@ -3,8 +3,14 @@ body{
     background-color: #5b197b;
 }
 
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
 #titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
     color: white;
 }
 
