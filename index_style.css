@@ -4,6 +4,11 @@ body{
 }
 
 #titulo{
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#QueEs{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
