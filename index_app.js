@@ -1,5 +1,21 @@
+$(document).ready(function(){
+      /* MAPA */
+    $(".click1").hide();
+    $(".click2").hide();
+    $(".click3").hide();
+    $(".click4").hide();
+    $(".click5").hide();
+    $(".click6").hide();
+    $(".click7").hide();
+    $(".click8").hide();
+    $(".click9").hide();
+    $(".click10").hide();
+    $(".imagenes1").hide();
+    $(".imagenes2").hide();
+    $(".imagenes3").hide();
+    $(".imagenes4").hide();
+    $(".imagenes5").hide();
 
-$(document).ready(function () {
     $(".texto_def").hide();
     $("#definiciones").mouseenter(function (){
         $(".texto_def").show();
@@ -7,181 +23,200 @@ $(document).ready(function () {
     $("#definiciones").mouseleave(function (){
         $(".texto_def").hide();
     });
-});
-
-$(document).ready(function () {
     var regiones = $(".region");
-    regiones.mouseenter(function () {
-        var idregion = $(this).attr("title");
-        $("#titulo_mapa").text(idregion);
+    regiones.mouseenter(function(){
+        var nombreregion = $(this).attr("title");
+        $("#mtitulo").text(nombreregion);
         $(this).fadeTo("fast", 0.5);
     });
-    regiones.mouseleave(function () {
-        $("#titulo_mapa").text("Mapa de Chile");
+    regiones.mouseleave(function(){
+        $("#mtitulo").text("Mapa de Chile");
         $(this).fadeTo("fast", 1);
     });
-    var b = false;
-    $("#boton").click(function () {
-        if (b == false) {
-            $("#I").css("fill", "#6A0888");
-            $("#II").css("fill", "#4C0B5F");
-            $("#III").css("fill", "#A901DB");
-            $("#IV").css("fill", "#A901DB");
-            $("#V").css("fill", "#E2A9F3");
-            $("#VI").css("fill", "#4C0B5F");
-            $("#VII").css("fill", "#D358F7");
-            $("#VIII").css("fill", "#2F0B3A");
-            $("#IX").css("fill", "#8904B1");
-            $("#X").css("fill", "#2F0B3A");
-            $("#XI").css("fill", "#6A0888");
-            $("#XII").css("fill", "#D358F7");
-            $("#RM").css("fill", "#E2A9F3");
-            $("#XIV").css("fill", "#8904B1");
-            $("#XV").css("fill", "6A0888");
-            $("#XVI").css("fill", "#2F0B3A");
-            b = true
-        }
-        else {
-            $("#I").css("fill", "#D0D3D4");
-            $("#II").css("fill", "#D0D3D4");
-            $("#III").css("fill", "#D0D3D4");
-            $("#IV").css("fill", "#D0D3D4");
-            $("#V").css("fill", "#D0D3D4");
-            $("#VI").css("fill", "#D0D3D4");
-            $("#VII").css("fill", "#D0D3D4");
-            $("#VIII").css("fill", "#D0D3D4");
-            $("#IX").css("fill", "#D0D3D4");
-            $("#X").css("fill", "#D0D3D4");
-            $("#XI").css("fill", "#D0D3D4");
-            $("#XII").css("fill", "#D0D3D4");
-            $("#RM").css("fill", "#D0D3D4");
-            $("#XIV").css("fill", "#D0D3D4");
-            $("#XV").css("fill", "#D0D3D4");
-            $("#XVI").css("fill", "#D0D3D4");
-            b = false
-        }
+    var escondido1 = true;
+    $("#XV").click(function(){
+        if (escondido1==true&&año1==true){
+            $(".click1").show();
+            $(".click2").show();
+            $(".imagenes1").show();
+            escondido1 = false}
+        else{
+            $(".click1").hide();
+            $(".click2").hide();
+            $(".imagenes1").hide();
+            escondido1 = true}
     });
-    var b2 = false;
-    $("#boton2").click(function () {
-        if (b2 == false) {
-            $("#I").css("fill", "#FF8000");
-            $("#II").css("fill", "#DF7401");
-            $("#III").css("fill", "#61380B");
-            $("#IV").css("fill", "#FF8000");
-            $("#V").css("fill", "#8A4B08");
-            $("#VI").css("fill", "#FE9A2E");
-            $("#VII").css("fill", "#DF7401");
-            $("#VIII").css("fill", "#61380B");
-            $("#IX").css("fill", "#B45F04");
-            $("#X").css("fill", "#FF8000");
-            $("#XI").css("fill", "#F7BE81");
-            $("#XII").css("fill", "#8A4B08");
-            $("#RM").css("fill", "#F7BE81");
-            $("#XIV").css("fill", "#B45F04");
-            $("#XV").css("fill", "#61380B");
-            $("#XVI").css("fill", "#FE9A2E");
-            b2 = true
-        }
-        else {
-            $("#I").css("fill", "#D0D3D4");
-            $("#II").css("fill", "#D0D3D4");
-            $("#III").css("fill", "#D0D3D4");
-            $("#IV").css("fill", "#D0D3D4");
-            $("#V").css("fill", "#D0D3D4");
-            $("#VI").css("fill", "#D0D3D4");
-            $("#VII").css("fill", "#D0D3D4");
-            $("#VIII").css("fill", "#D0D3D4");
-            $("#IX").css("fill", "#D0D3D4");
-            $("#X").css("fill", "#D0D3D4");
-            $("#XI").css("fill", "#D0D3D4");
-            $("#XII").css("fill", "#D0D3D4");
-            $("#RM").css("fill", "#D0D3D4");
-            $("#XIV").css("fill", "#D0D3D4");
-            $("#XV").css("fill", "#D0D3D4");
-            $("#XVI").css("fill", "#D0D3D4");
-            b2 = false
-        }
+    var escondido2 = true;
+    $("#XV").click(function(){
+        if (escondido2==true&&año2==true){
+            $(".click3").show();
+            $(".click4").show();
+            $(".imagenes2").show();
+            escondido2 = false}
+        else{
+            $(".click3").hide();
+            $(".click4").hide();
+            $(".imagenes2").hide();
+            escondido2 = true}
     });
-    var b3 = false;
-    $("#boton3").click(function () {
-        if (b3 == false) {
-            $("#I").css("fill", "#8A084B");
-            $("#II").css("fill", "#FF00BF");
-            $("#III").css("fill", "#8A084B");
-            $("#IV").css("fill", "#FE2E9A");
-            $("#V").css("fill", "#FF00BF");
-            $("#VI").css("fill", "#F781BE");
-            $("#VII").css("fill", "#FE2E9A");
-            $("#VIII").css("fill", "#B4045F");
-            $("#IX").css("fill", "#B40486");
-            $("#X").css("fill", "#FF0080");
-            $("#XI").css("fill", "#610B4B");
-            $("#XII").css("fill", "#B4045F");
-            $("#RM").css("fill", "#F781BE");
-            $("#XIV").css("fill", "#B4045F");
-            $("#XV").css("fill", "#8A084B");
-            $("#XVI").css("fill", "#FF0080");
-            b3 = true
-        }
-        else {
-            $("#I").css("fill", "#D0D3D4");
-            $("#II").css("fill", "#D0D3D4");
-            $("#III").css("fill", "#D0D3D4");
-            $("#IV").css("fill", "#D0D3D4");
-            $("#V").css("fill", "#D0D3D4");
-            $("#VI").css("fill", "#D0D3D4");
-            $("#VII").css("fill", "#D0D3D4");
-            $("#VIII").css("fill", "#D0D3D4");
-            $("#IX").css("fill", "#D0D3D4");
-            $("#X").css("fill", "#D0D3D4");
-            $("#XI").css("fill", "#D0D3D4");
-            $("#XII").css("fill", "#D0D3D4");
-            $("#RM").css("fill", "#D0D3D4");
-            $("#XIV").css("fill", "#D0D3D4");
-            $("#XV").css("fill", "#D0D3D4");
-            $("#XVI").css("fill", "#D0D3D4");
-            b3 = false
-        }
+    var escondido3 = true;
+    $("#XV").click(function(){
+        if (escondido3==true&&año3==true){
+            $(".click5").show();
+            $(".click6").show();
+            $(".imagenes3").show();
+            escondido3 = false}
+        else{
+            $(".click5").hide();
+            $(".click6").hide();
+            $(".imagenes3").hide();
+            escondido3 = true}
     });
-    var b4 = false;
-    $("#boton4").click(function () {
-        if (b4 == false) {
-            $("#I").css("fill", "#FE2E64");
-            $("#II").css("fill", "#DF013A");
-            $("#III").css("fill", "#8A0829");
-            $("#IV").css("fill", "#DF013A");
-            $("#V").css("fill", "#610B21");
-            $("#VI").css("fill", "#FF0040");
-            $("#VII").css("fill", "#DF013A");
-            $("#VIII").css("fill", "#610B21");
-            $("#IX").css("fill", "#F7819F");
-            $("#X").css("fill", "#FF0040");
-            $("#XI").css("fill", "#F7819F");
-            $("#XII").css("fill", "#8A0829");
-            $("#RM").css("fill", "#FE2E64");
-            $("#XIV").css("fill", "#FF0040");
-            $("#XV").css("fill", "#DF013A");
-            $("#XVI").css("fill", "#8A0829");
-            b4 = true
-        }
-        else {
-            $("#I").css("fill", "#D0D3D4");
-            $("#II").css("fill", "#D0D3D4");
-            $("#III").css("fill", "#D0D3D4");
-            $("#IV").css("fill", "#D0D3D4");
-            $("#V").css("fill", "#D0D3D4");
-            $("#VI").css("fill", "#D0D3D4");
-            $("#VII").css("fill", "#D0D3D4");
-            $("#VIII").css("fill", "#D0D3D4");
-            $("#IX").css("fill", "#D0D3D4");
-            $("#X").css("fill", "#D0D3D4");
-            $("#XI").css("fill", "#D0D3D4");
-            $("#XII").css("fill", "#D0D3D4");
-            $("#RM").css("fill", "#D0D3D4");
-            $("#XIV").css("fill", "#D0D3D4");
-            $("#XV").css("fill", "#D0D3D4");
-            $("#XVI").css("fill", "#D0D3D4");
-            b4 = false
-        }
+    var escondido4 = true;
+    $("#XV").click(function(){
+        if (escondido4==true&&año4==true){
+            $(".click7").show();
+            $(".click8").show();
+            $(".imagenes4").show();
+            escondido4 = false}
+        else{
+            $(".click7").hide();
+            $(".click8").hide();
+            $(".imagenes4").hide();
+            escondido4 = true}
+    });
+    var escondido5 = true;
+    $("#XV").click(function(){
+        if (escondido5==true&&año5==true){
+                $(".click9").show();
+                $(".click10").show();
+                $(".imagenes5").show();
+                escondido5 = false}
+            else{
+                $(".click9").hide();
+                $(".click10").hide();
+                $(".imagenes5").hide();
+                escondido5 = true}
+            });
+    var año1= false;
+    var año2= false;
+    var año3= false;
+    var año4= false;
+    var año5= false;
+
+    $("#boton").click(function(){
+        año1= true;
+        año2=false;
+        año3=false;
+        año4=false;
+        año5=false;
+        $("#XV").css("fill","#9B59B6");
+        $("#I").css("fill","#512E5F");
+        $("#II").css("fill","#C39BD3");
+        $("#III").css("fill","#9B59B6");
+        $("#IV").css("fill","#C39BD3");
+        $("#V").css("fill","#C39BD3");
+        $("#RM").css("fill","#EBDEF0");
+        $("#VI").css("fill","#C39BD3");
+        $("#VII").css("fill","#C39BD3");
+        $("#XVI").css("fill","#C39BD3");
+        $("#VIII").css("fill","#C39BD3");      
+        $("#IX").css("fill","#9B59B6");
+        $("#XIV").css("fill","#9B59B6");
+        $("#X").css("fill","#76448A");
+        $("#XI").css("fill","#512E5F");
+        $("#XII").css("fill","#EBDEF0");
+        });
+    $("#boton2").click(function(){
+        año1= false;
+        año2=true;
+        año3=false;
+        año4=false;
+        año5=false;
+        $("#XV").css("fill","#76448A");
+        $("#I").css("fill","#512E5F");
+        $("#II").css("fill","#9B59B6");
+        $("#III").css("fill","#9B59B6");
+        $("#IV").css("fill","#C39BD3");
+        $("#V").css("fill","#C39BD3");
+        $("#RM").css("fill","#EBDEF0");
+        $("#VI").css("fill","#C39BD3");
+        $("#VII").css("fill","#C39BD3");
+        $("#XVI").css("fill","#C39BD3");
+        $("#VIII").css("fill","#C39BD3");      
+        $("#IX").css("fill","#9B59B6");
+        $("#XIV").css("fill","#9B59B6");
+        $("#X").css("fill","#9B59B6");
+        $("#XI").css("fill","#512E5F");
+        $("#XII").css("fill","#EBDEF0");
+    });
+    $("#boton3").click(function(){
+        año1=false;
+        año2=false;
+        año3=true;
+        año4=false;
+        año5=false;
+        $("#XV").css("fill","#C39BD3");
+        $("#I").css("fill","#76448A");
+        $("#II").css("fill","#C39BD3");
+        $("#III").css("fill","#C39BD3");
+        $("#IV").css("fill","#EBDEF0");
+        $("#V").css("fill","#EBDEF0");
+        $("#RM").css("fill","#EBDEF0");
+        $("#VI").css("fill","#C39BD3");
+        $("#VII").css("fill","#C39BD3");
+        $("#XVI").css("fill","#EBDEF0");
+        $("#VIII").css("fill","#EBDEF0");      
+        $("#IX").css("fill","#9B59B6");
+        $("#XIV").css("fill","#C39BD3");
+        $("#X").css("fill","#9B59B6");
+        $("#XI").css("fill","#9B59B6");
+        $("#XII").css("fill","#EBDEF0");
+    });
+    $("#boton4").click(function(){
+        año1=false;
+        año2=false;
+        año3=false;
+        año4=true;
+        año5=false;
+        $("#XV").css("fill","#9B59B6");
+        $("#I").css("fill","#76448A");
+        $("#II").css("fill","#C39BD3");
+        $("#III").css("fill","#9B59B6");
+        $("#IV").css("fill","#C39BD3");
+        $("#V").css("fill","#C39BD3");
+        $("#RM").css("fill","#EBDEF0");
+        $("#VI").css("fill","#9B59B6");
+        $("#VII").css("fill","#C39BD3");
+        $("#XVI").css("fill","#C39BD3");
+        $("#VIII").css("fill","#C39BD3");      
+        $("#IX").css("fill","#9B59B6");
+        $("#XIV").css("fill","#9B59B6");
+        $("#X").css("fill","#76448A");
+        $("#XI").css("fill","#C39BD3");
+        $("#XII").css("fill","#C39BD3");
+    });
+    $("#boton5").click(function(){
+    año1=false;
+    año2=false;
+    año3=false;
+    año4=false;
+    año5=true;
+    $("#XV").css("fill","#9B59B6");
+    $("#I").css("fill","#76448A");
+    $("#II").css("fill","#C39BD3");
+    $("#III").css("fill","#9B59B6");
+    $("#IV").css("fill","#C39BD3");
+    $("#V").css("fill","#EBDEF0");
+    $("#RM").css("fill","#F5EEF8");
+    $("#VI").css("fill","#C39BD3");
+    $("#VII").css("fill","#C39BD3");
+    $("#XVI").css("fill","#C39BD3");
+    $("#VIII").css("fill","#EBDEF0");      
+    $("#IX").css("fill","#9B59B6");
+    $("#XIV").css("fill","#9B59B6");
+    $("#X").css("fill","#9B59B6");
+    $("#XI").css("fill","#9B59B6");
+    $("#XII").css("fill","#EBDEF0");
     })
-})
+    })
