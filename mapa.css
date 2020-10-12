@@ -87,37 +87,37 @@
     border-bottom: 1px dotted black;
   }
 
-#I1{
+.I1{
     position: absolute;
     top: 150px;
     left:700px;
 }
-#I2{
+.I2{
     position: absolute;
     top: 150px;
     left:750px;
 }
-#I3{
+.I3{
     position: absolute;
     top: 150px;
     left:800px;
 }
-#I4{
+.I4{
     position: absolute;
     top: 150px;
     left:850px;
 }
-#I5{
+.I5{
     position: absolute;
     top: 150px;
     left:900px;
 }
-#I6{
+.I6{
     position: absolute;
     top: 150px;
     left:950px;
 }
-#I7{
+.I7{
     position: absolute;
     top: 150px;
     left:1000px;
