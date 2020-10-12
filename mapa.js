@@ -19,12 +19,12 @@ $(document).ready(function(){
     var regiones = $(".region");
     regiones.mouseenter(function(){
         var nombreregion = $(this).attr("title");
-        $("#titulo_mapa").text(nombreregion);
-        $(this).fadeTo("fast", 0.5)
+        $("#titulo").text(nombreregion);
+        $(this).fadeTo("fast", 0.5);
     });
     regiones.mouseleave(function(){
         $("#titulo").text("Mapa de Chile");
-        $(this).fadeTo("fast", 1)
+        $(this).fadeTo("fast", 1);
     });
     var escondido1 = true;
     $("#XV").click(function(){
