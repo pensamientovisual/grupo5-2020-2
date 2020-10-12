@@ -1,0 +1,194 @@
+.region{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#titulo{
+    position: relative;
+    left:450px;
+}
+.botones{
+    position: absolute;
+    left:100px;
+    top: 130px;
+}
+#I{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#II{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#III{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#IV{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#V{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VIII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#IX{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#X{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XII{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#RM{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#XIV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XVI{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+.mapadiv{
+    text-align: center;
+}
+#XV{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+#I1{
+    position: absolute;
+    top: 150px;
+    left:700px;
+}
+#I2{
+    position: absolute;
+    top: 150px;
+    left:750px;
+}
+#I3{
+    position: absolute;
+    top: 150px;
+    left:800px;
+}
+#I4{
+    position: absolute;
+    top: 150px;
+    left:850px;
+}
+#I5{
+    position: absolute;
+    top: 150px;
+    left:900px;
+}
+#I6{
+    position: absolute;
+    top: 150px;
+    left:950px;
+}
+#I7{
+    position: absolute;
+    top: 150px;
+    left:1000px;
+}
+.click1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 240px;
+    left:730px;
+}
+.click2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 285px;
+    left:730px;
+}
+.click3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 240px;
+    left:730px;
+}
+.click4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 285px;
+    left:730px;
+}
+.click5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 240px;
+    left:730px;
+}
+.click6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 285px;
+    left:730px;
+}
+.click7{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 240px;
+    left:730px;
+}
+.click8{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 285px;
+    left:730px;
+}
+.click9{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 240px;
+    left:730px;
+}
+.click10{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 285px;
+    left:730px;
+}
+#intrucciones{
+    position: relative;
+    left:90px;
+    background-color:#ECF0F1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-right: 850px;
+    border-radius: 0%;
+
+}
