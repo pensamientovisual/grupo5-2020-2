@@ -17,10 +17,10 @@ $(document).ready(function(){
     $(".imagenes5").hide();
 
     $(".texto_def").hide();
-    $("#definiciones").mouseenter(function (){
+    $("#titulo_def").mouseenter(function (){
         $(".texto_def").show();
     });
-    $("#definiciones").mouseleave(function (){
+    $("#titulo_def").mouseleave(function (){
         $(".texto_def").hide();
     });
     var regiones = $(".region");
