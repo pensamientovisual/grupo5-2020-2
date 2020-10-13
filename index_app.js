@@ -30,7 +30,7 @@ $(document).ready(function(){
         $(this).fadeTo("fast", 0.5);
     });
     regiones.mouseleave(function(){
-        $("#mtitulo").text("Mapa de Chile");
+        $("#mtitulo").text("Violencia Intrafamiliar en Chile");
         $(this).fadeTo("fast", 1);
     });
     var escondido1 = true;
