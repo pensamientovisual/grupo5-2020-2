@@ -1,5 +1,7 @@
 
 body{
+    background-image: url("background_mujer.png");
+    background-repeat: no-repeat;
     background-color: #654073;
     width: 1366px;
     height: 1768px;
@@ -20,6 +22,8 @@ nav{
     margin: auto;
     width: 50%;
     padding: 10px;
+    position: relative;
+    left: -100px;
 }
 
 #QueEs{
@@ -28,7 +32,7 @@ nav{
     text-align: center;
     background-color: #977fa3;
     width: 1000px;
-    height: 150px;
+    height: 100px;
     margin: auto;
     padding: 10px;
     position: relative;
@@ -70,7 +74,7 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     width: 400px;
-    height: 250px;
+    height: 300px;
     margin: 30px;
     padding: 10px;
     position: relative;
