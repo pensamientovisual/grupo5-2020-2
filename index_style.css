@@ -46,46 +46,78 @@ nav{
 .organizacion{
     background-color: #977fa3;
     width: 1000px;
-    height: 250px;
+    height: 270px;
     margin: 20px;
     padding: 10px;
     position: relative;
     top: 200px;
+    left: 75px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-a{
+.link_org:link{
     text-decoration: none;
+        color: white;
 }
+
+.link_org:visited{
+    text-decoration: none;
+    color: white;
+}
+
 
 #definiciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    width: 1000px;
+    width: 400px;
     height: 250px;
     margin: 30px;
     padding: 10px;
+    position: relative;
+    top: 30px;
 }
+
+
 .texto_def{
     background-color: #977fa3;
-    width: 250px;
+    width: 500px;
+    height: 55px;
     margin: 10px;
     padding: 10px;
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size:12px;
+    position: relative;
+    top: -80px;
+    left: 400px;
 }
 
 .subtitulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    position: relative;
+    top: 200px;
+    left: 100px;
 }
+
 .parr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    position: relative;
+    top: 200px;
+    left: 100px;
 }
-/* MAPA */
+
+
+#cuadro_mapa{
+    background-color: #977fa3;
+    width: 1366px;
+    height: 1000px;
+}
+
+
+/* ----------------------MAPA---------------------- */
 .region{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -94,8 +126,11 @@ a{
     text-align: center;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
     color: white;
 }
+
 .botones{
     position: absolute;
     left:250px;
@@ -301,4 +336,3 @@ a{
     color: white;
 }
 
-}
