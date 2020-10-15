@@ -8,9 +8,8 @@
   <link href="index_style.css" rel="stylesheet" />
   <script type="text/javascript" src="jquery-1.10.1.js"></script>
   <script type="text/javascript" src="index_app.js"></script>
-  <script type="text/javascript" src="d3.v4.min.js"></script>
-  <script type="text/javascript" src="d3_tarea.js"></script>
-
+  <script type="text/javascript" src="d3.js"></script>
+  <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
 
 </head>
 
@@ -269,9 +268,12 @@
     </div>
   </div>
   <div id="d3_container">
-    <script src='d3_tarea.js' charset='utf-8'></script>
+    <svg width="960" height="500"></svg>
+    <script src="d3 prueba.js"></script>
     <script>var svg = d3.select("#d3_container").append("svg");</script>
   </div>
+    
+    
 </body>
 
 </html>
