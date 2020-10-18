@@ -39,7 +39,7 @@ nav{
     left: 000px;
 }
 
-#cuadro_organzanizaciones{
+#cuadro_organizaciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: left;
@@ -116,7 +116,6 @@ nav{
 #cuadro_mapa{
     background-color: #977fa3;
     width: 1366px;
-    height: 1000px;
 }
 
 

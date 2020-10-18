@@ -48,7 +48,7 @@ html`<button>Replay`
 }
 );
   main.variable().define("duration", function(){return(
-250
+500
 )});
   main.variable().define("n", function(){return(
 12
