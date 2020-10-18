@@ -44,6 +44,7 @@ nav{
 
 }
 
+
 #cuadro_organzanizaciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -151,7 +152,7 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: bold;
-    color: white;
+    color: black;
     top: 30px;
     justify-content: center;
 }
@@ -232,6 +233,7 @@ nav{
 }
 .mapdiv{
     text-align: center;
+
 }
 #XV{
     position: relative;
@@ -280,6 +282,7 @@ nav{
     top: 900px;
     left:930px;
     width: 300px;
+    color: black;
     ;
 }
 .click2{
@@ -363,3 +366,8 @@ nav{
     color: white;
 }
 
+#cuadro_mapa{
+    background-color: white;
+    width: 1366px;
+    height: 1000px;
+}
