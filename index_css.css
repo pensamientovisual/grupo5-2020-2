@@ -1,0 +1,341 @@
+body{
+    background-image: url("background_mujer.png");
+    background-repeat: no-repeat;
+    background-color: #654073;
+    width: 1366px;
+    height: 1768px;
+    margin: 50px;
+    padding: 20px;
+}
+
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: relative;
+    left: -100px;
+}
+
+#QueEs{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    background-color: #977fa3;
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    left: 000px;
+}
+
+#cuadro_organzanizaciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: left;
+    font-style: normal;
+}
+
+.organizacion{
+    background-color: #977fa3;
+    width: 1000px;
+    height: 270px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+    left: 75px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.link_org:link{
+    text-decoration: none;
+        color: white;
+}
+
+.link_org:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
+#definiciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+}
+
+
+.texto_def{
+    background-color: #977fa3;
+    width: 500px;
+    height: 55px;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size:12px;
+    position: relative;
+    top: -80px;
+    left: 400px;
+}
+
+.subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.parr{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+
+#cuadro_mapa{
+    background-color: #977fa3;
+    width: 1366px;
+    height: 1000px;
+}
+
+
+/* ----------------------MAPA---------------------- */
+.region{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#mtitulo{
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+.botones{
+    position: absolute;
+    left:250px;
+    top: 843px;
+}
+#I{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#II{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#III{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#IV{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#V{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#VIII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#IX{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#X{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XII{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#RM{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#XIV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#XVI{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+.mapdiv{
+    text-align: center;
+}
+#XV{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+
+.I1{
+    position: absolute;
+    top: 800px;
+    left:910px;
+}
+.I2{
+    position: absolute;
+    top: 800px;
+    left:960px;
+}
+.I3{
+    position: absolute;
+    top: 800px;
+    left:1010px;
+}
+.I4{
+    position: absolute;
+    top: 800px;
+    left:1060px;
+}
+.I5{
+    position: absolute;
+    top: 800px;
+    left:1110px;
+}
+.I6{
+    position: absolute;
+    top: 800px;
+    left:1160px;
+}
+.I7{
+    position: absolute;
+    top: 800px;
+    left:1210px;
+}
+.click1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left:930px;
+    width: 300px;
+    ;
+}
+.click2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 945px;
+    left:940px;
+    width: 350px;
+    text-align: left;
+}
+.click3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left:930px;
+    width: 300px;
+}
+.click4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 945px;
+    left:940px;
+    width: 350px;
+    text-align: left;
+}
+.click5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left:930px;
+    width: 300px;
+}
+.click6{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 945px;
+    left:940px;
+    width: 350px;
+    text-align: left;
+}
+.click7{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left:930px;
+    width: 300px;
+}
+.click8{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 945px;
+    left:940px;
+    width: 350px;
+    text-align: left;
+}
+.click9{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 900px;
+    left:930px;
+    width: 300px;
+}
+.click10{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 945px;
+    left:940px;
+    width: 350px;
+    text-align: left;
+}
+#intrucciones{
+    position: relative;
+    left:180px;
+    background-color: #977fa3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-right: 950px;
+    padding: 5px;
+    border-radius: 0%;
+    color: white;
+}
