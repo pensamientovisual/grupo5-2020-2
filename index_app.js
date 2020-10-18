@@ -126,9 +126,7 @@ $(document).ready(function(){
                 $(".imagenes5").hide();
                 escondido5 = true}
             });
- 
-
-    $("#Boton").click(function(){
+    $("#boton").click(function(){
         año1= true;
         año2=false;
         año3=false;
@@ -151,7 +149,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#512E5F");
         $("#XII").css("fill","#EBDEF0");
         });
-    $("#Boton2").click(function(){
+    $("#boton2").click(function(){
         año1= false;
         año2=true;
         año3=false;
@@ -174,7 +172,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#512E5F");
         $("#XII").css("fill","#EBDEF0");
     });
-    $("#Boton3").click(function(){
+    $("#boton3").click(function(){
         año1=false;
         año2=false;
         año3=true;
@@ -197,7 +195,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#9B59B6");
         $("#XII").css("fill","#EBDEF0");
     });
-    $("#Boton4").click(function(){
+    $("#boton4").click(function(){
         año1=false;
         año2=false;
         año3=false;
