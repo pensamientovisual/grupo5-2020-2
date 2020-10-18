@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    background-image: url("https://www.diariodehuelva.es/wp-content/uploads/2019/11/violencia-de-g%C3%A9nero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#titulo1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+#titulo2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 180px;
+    left: 220px;
+}
+#titulo3{
+    font-family: "Open Sans";
+    font-style: italic;
+    position: relative;
+    top: 180px;
+    left: 100px;
+}
+#boton{
+    position: relative;
+    top: 180px;
+    left: 220px;
+    background-color: #977fa3;
+    
+
+}

@@ -15,14 +15,42 @@ $(document).ready(function(){
     $(".imagenes3").hide();
     $(".imagenes4").hide();
     $(".imagenes5").hide();
+    $("#VF2").hide();
+    $("#Fem2").hide();
+    $("#D32").hide();
+    $("#D42").hide();
 
-    $(".texto_def").hide();
-    $("#titulo_def").mouseenter(function (){
-        $(".texto_def").show();
+    var año1= false;
+    var año2= false;
+    var año3= false;
+    var año4= false;
+    var año5= false;
+
+    $("#VF").mouseenter(function (){
+        $("#VF2").show();
     });
-    $("#titulo_def").mouseleave(function (){
-        $(".texto_def").hide();
+    $("#VF").mouseleave(function (){
+        $("#VF2").hide();
     });
+    $("#Fem").mouseenter(function (){
+        $("#Fem2").show();
+    });
+    $("#Fem").mouseleave(function (){
+        $("#Fem2").hide();
+    });
+    $("#D3").mouseenter(function (){
+        $("#D32").show();
+    });
+    $("#D3").mouseleave(function (){
+        $("#D32").hide();
+    });
+    $("#D4").mouseenter(function (){
+        $("#D42").show();
+    });
+    $("#D4").mouseleave(function (){
+        $("#D42").hide();
+    });
+    
     var regiones = $(".region");
     regiones.mouseenter(function(){
         var nombreregion = $(this).attr("title");
@@ -98,13 +126,9 @@ $(document).ready(function(){
                 $(".imagenes5").hide();
                 escondido5 = true}
             });
-    var año1= false;
-    var año2= false;
-    var año3= false;
-    var año4= false;
-    var año5= false;
+ 
 
-    $("#boton").click(function(){
+    $("#Boton").click(function(){
         año1= true;
         año2=false;
         año3=false;
@@ -127,7 +151,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#512E5F");
         $("#XII").css("fill","#EBDEF0");
         });
-    $("#boton2").click(function(){
+    $("#Boton2").click(function(){
         año1= false;
         año2=true;
         año3=false;
@@ -150,7 +174,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#512E5F");
         $("#XII").css("fill","#EBDEF0");
     });
-    $("#boton3").click(function(){
+    $("#Boton3").click(function(){
         año1=false;
         año2=false;
         año3=true;
@@ -173,7 +197,7 @@ $(document).ready(function(){
         $("#XI").css("fill","#9B59B6");
         $("#XII").css("fill","#EBDEF0");
     });
-    $("#boton4").click(function(){
+    $("#Boton4").click(function(){
         año1=false;
         año2=false;
         año3=false;
