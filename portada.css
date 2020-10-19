@@ -1,10 +1,12 @@
 body{
     margin: 0;
-    background-image: url("https://www.diariodehuelva.es/wp-content/uploads/2019/11/violencia-de-g%C3%A9nero-1.jpg");
+    background-image: url("https://www.tabascohoy.com/wp-content/uploads/2020/09/mujeres-esterilizadas-estados-unidos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /* background-position:center ;
+    background-attachment: fixed; */
+    background-position: 50% 0%; 
+    /* Imagen extraida de "https://www.tabascohoy.com/daran-alojamiento-gratuito-a-mujeres-victimas-de-violencia-en-mexico/"*/
 }
 
 #titulo1{
