@@ -82,6 +82,28 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.text_org{
+    width: 700px;
+}
+
+#img_fundacion_honra{
+    position: relative;
+    left: 750px;
+    top: -175px;
+}
+
+#img_fundacion_antonia{
+    position: relative;
+    left: 750px;
+    top: -125px;
+}
+
+#img_corporacion_miles{
+    position: relative;
+    left: 750px;
+    top: -150px;
+}
+
 .link_org:link{
     color:white;
 }
@@ -331,120 +353,7 @@ nav{
     display: inline-block;
     border-bottom: 1px dotted black;
   }
-
-/* .I1{
-    position: absolute;
-    top: 500px;
-    left:810px;
-}
-.I2{
-    position: absolute;
-    top: 500px;
-    left:860px;
-}
-.I3{
-    position: absolute;
-    top: 500px;
-    left:910px;
-}
-.I4{
-    position: absolute;
-    top: 500px;
-    left:960px;
-}
-.I5{
-    position: absolute;
-    top: 500px;
-    left:1010px;
-}
-.I6{
-    position: absolute;
-    top: 500px;
-    left:1060px;
-}
-.I7{
-    position: absolute;
-    top: 500px;
-    left:1110px;
-}
-.click1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 600px;
-    left:810px;
-    width: 300px;
-    color: black;
-    ;
-}
-.click2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 645px;
-    left:840px;
-    width: 350px;
-    text-align: left;
-}
-.click3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 600px;
-    left:810px;
-    width: 300px;
-}
-.click4{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 645px;
-    left:840px;
-    width: 350px;
-    text-align: left;
-}
-.click5{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 600px;
-    left:810px;
-    width: 300px;
-}
-.click6{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 645px;
-    left:840px;
-    width: 350px;
-    text-align: left;
-}
-.click7{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 600px;
-    left:810px;
-    width: 300px;
-}
-.click8{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 645px;
-    left:840px;
-    width: 350px;
-    text-align: left;
-}
-.click9{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 600px;
-    left:810px;
-    width: 300px;
-}
-.click10{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 645px;
-    left:840px;
-    width: 350px;
-    text-align: left;
-} */
-.intrucciones{
+  .intrucciones{
     position: relative;
     top: 65px;
     left:58px;
@@ -467,53 +376,62 @@ nav{
     position:absolute;
     left: 850px;
     top: 500px;
+    height: 75px;
 
 }
 #XV2016{
     top: 500px;
 }
 #I2016{
-    top: 570px;
+    top: 580px;
 }
 #II2016{
-    top: 640px;
+    top: 660px;
 }
 #III2016{
-    top: 710px;
+    top: 740px;
 }
 #IV2016{
-    top: 780px;
-}
-#V2016{
-    top: 850px;
+    top: 820px;
 }
 #RM2016{
-    top: 920px;
-}
-#VI2016{
-    top: 990px;
+    top: 900px;
 }
 #VII2016{
-    top: 1060px;
-}
-#XVI2016{
-    top: 1130px;
+    top: 980px;
 }
 #VIII2016{
-    top: 1200px;
-}
-#IX2016{
-    top: 1160px;
+    top: 1060px;
 }
 #XIV2016{
-    top: 1215px;
-}
-#X2016{
-    top: 1270px;
+    top: 1140px;
 }
 #XI2016{
-    top: 1325px;
+    top: 1220px;
+}
+/* Parte izquierda */
+#V2016{
+    left: 175px;
+    top: 825px;
+}
+
+#VI2016{
+    left: 175px;
+    top: 905px;
+}
+#XVI2016{
+    left: 175px;
+    top: 985px;
+}
+#IX2016{
+    left: 175px;
+    top: 1065px;
+}
+#X2016{
+    left: 175px;
+    top: 1145px;
 }
 #XII2016{
-    top: 1380px;
+    left: 175px;
+    top: 1225px;
 }
