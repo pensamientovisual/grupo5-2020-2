@@ -1,0 +1,13 @@
+{
+ "name": "Femicidios frustrados contra la mujer",
+ "children": [
+  {"name": "Femicidios frustrados 2013", "value": 78},
+  {"name": "Femicidios frustrados 2014", "value": 103},
+  {"name": "Femicidios frustrados 2015", "value": 112},  
+  {"name": "Femicidios frustrados 2016", "value": 129},
+  {"name": "Femicidios frustrados 2017", "value": 115},  
+  {"name": "Femicidios frustrados 2018", "value": 121},
+  {"name": "Femicidios frustrados 2019", "value": 109},
+  {"name": "Femicidios frustrados 2020", "value": 105}
+ ]
+}

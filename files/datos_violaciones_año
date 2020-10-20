@@ -1,0 +1,13 @@
+{
+ "name": "Violaciones contra la mujer",
+ "children": [
+  {"name": "Violaciones 2013", "value": 2019},
+  {"name": "Violaciones 2014", "value": 1847},
+  {"name": "Violaciones 2015", "value": 1743},  
+  {"name": "Violaciones 2016", "value": 1727},
+  {"name": "Violaciones 2017", "value": 1726},  
+  {"name": "Violaciones 2018", "value": 2002},
+  {"name": "Violaciones 2019", "value": 2241},
+  {"name": "Violaciones 2020", "value": 1024}
+ ]
+}
