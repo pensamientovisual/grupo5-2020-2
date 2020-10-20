@@ -6,7 +6,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["data_violaciones.csv",new URL("./files/data_violaciones",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Cantidad de violencia intrafamiliar a la mujer por mes.
+md`# Cantidad de violaciones a la mujer por mes.
 
 Desde el 2016 hasta el primer semestre del 2020.`
 )});

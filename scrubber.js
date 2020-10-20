@@ -1,4 +1,4 @@
-// Código sacado https://observablehq.com/@mbostock/scrubber@252
+// Código sacado de: https://observablehq.com/@mbostock/scrubber@252
 import define1 from "./element remove.js";
 
 export default function define(runtime, observer) {
@@ -101,7 +101,7 @@ function Scrubber(values, {
 } = {}) {
   values = Array.from(values);
   const form = html`<form style="font: 12px var(--sans-serif); font-variant-numeric: tabular-nums; display: flex; height: 33px; align-items: center;">
-  <button name=b type=button style="margin-right: 0.4em; width: 5em;"></button>
+  <button id="botonplay" name=b type=button style="margin-right: 0.4em; width: 5em;"></button>
   <label style="display: flex; align-items: center;">
     <input name=i type=range min=0 max=${values.length - 1} value=${initial} step=1 style="width: 180px;">
     <output name=o style="margin-left: 0.4em;"></output>
