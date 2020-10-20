@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo 5 - Pensamiento Visual</title>
   <link href="css_2.css" rel="stylesheet" />
+  <link href="css tab.css" rel="stylesheet" />
   <script type="text/javascript" src="jquery-1.10.1.js"></script>
   <script type="text/javascript" src="index_app.js"></script>
   <script type="text/javascript" src="d3.js"></script>
@@ -53,12 +54,12 @@
             <li><a href="#mapa1">Violencia intrafamiliar</a></li>
             <li><a href="#mapa2">Femicidios</a></li>
             <li><a href="#section41">Violaciones</a></li>
-            <li><a href="#hola">Organizaciones</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compara <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#section41">Violaciones</a></li>
-                <li><a href="#subtitulo">Organizaciones</a></li>
+                <li><a href="#graficos_barras">según los meses</a></li>
+                <li><a href="#graficos_circulares">según los años</a></li>
               </ul> 
+            <li><a href="#hola">Organizaciones</a></li>
             </li>
             </ul>
         </div>
@@ -278,119 +279,156 @@
         </svg>
     </div>
 </div>
+<!-- Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs-->
 
-<div id="barras_vif" style="width:500px">
-    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
+<div id="graficos_barras">
 
-    <script type="module" >
-      import define from "./index vif.js";
-      import {Runtime, Library, Inspector} from "./runtime.js";
-      
-      const runtime = new Runtime();
-      const main = runtime.module(define, Inspector.into(document.body));
-    </script>
-</div>
+    <h1><br><br>Compara según los meses</h1>
+    <script src="script tab1.js" defer></script>
+  
+  <ul class="tabs">
+      <li data-tab-target="#barras_abusos" class="active tab">Abusos</li>
+      <li data-tab-target="#barras_violaciones" class="tab">Violaciones</li>
+      <li data-tab-target="#barras_vif" class="tab">Violencia intrafamiliar</li>
+    </ul>
+  
+    <div class="tab-content">
+        
+        <div id="barras_abusos" data-tab-content class="active" style="width: 1000px;">
+        
+            <script type="module">
+              import define from "./index abusos.js";
+              import {Runtime, Library, Inspector} from "./runtime.js";
+              
+              const runtime = new Runtime();
+              const main = runtime.module(define, Inspector.into(document.id="#barras_abusos"));
+            </script>
+        </div>
+        
+        <div id="barras_vif" data-tab-content style="width: 1000px;">
+        
+            <script type="module">
+              import define from "./index vif.js";
+              import {Runtime, Library, Inspector} from "./runtime.js";
+              
+              const runtime = new Runtime();
+              const main = runtime.module(define, Inspector.into(document.id="#barras_vif"));
+            </script>
+        </div>
+        
+        <div id="barras_violaciones" data-tab-content style="width: 1000px;">
+        
+            <script type="module">
+              import define from "./index violaciones.js";
+              import {Runtime, Library, Inspector} from "./runtime.js";
+              
+              const runtime = new Runtime();
+              const main = runtime.module(define, Inspector.into(document.id="#barras_violaciones"));
+            </script>
+        </div>
+  
+    </div>
+  
+  </div>
 
-<div id="barras_abusos" style="width:500px">
-    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
 
-    <script type="module" >
-      import define from "./index abusos.js";
-      import {Runtime, Library, Inspector} from "./runtime.js";
-      
-      const runtime = new Runtime();
-      const main = runtime.module(define, Inspector.into(document.body));
-    </script>
-</div>
+<!-- Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs-->
 
-<div id="barras_violaciones" style="width:500px">
-    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
+<div id="graficos_circulares">
+    <h1><br><br>Compara según el año</h1>
 
-    <script type="module" >
-      import define from "./index violaciones.js";
-      import {Runtime, Library, Inspector} from "./runtime.js";
-      
-      const runtime = new Runtime();
-      const main = runtime.module(define, Inspector.into(document.body));
-    </script>
-</div>
+  <script src="script tab2.js" defer></script>
 
-<div id="circulo_total" style="width:500px">
-    <script type="module">
+<ul class="tabs">
+    <li data-tab-target="#global" class="active tab">Global</li>
+    <li data-tab-target="#abusos" class="tab">Abusos</li>
+    <li data-tab-target="#violaciones" class="tab">Violaciones</li>
+    <li data-tab-target="#vif" class="tab">Violencia intrafamiliar</li>
+    <li data-tab-target="#fconsumados" class="tab">Femicidios consumados</li>
+    <li data-tab-target="#ffrustrados" class="tab">Femicidios frustrados</li>
+  </ul>
 
-    import define from "./index circular por año.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
+  <div class="tab-content">
 
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
+    <div id="global" data-tab-content class="active" style="width: 800px;">
+      <script type="module" id="#global">
 
-    </script>
-</div>
+        import define from "./index circular por año.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
     
-<div id="circulo_abusos" style="width:500px">
-    <script type="module">
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#global"));
+    
+        </script>
+    </div>
 
-    import define from "./index circular abusos.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
+    <div id="abusos" style="width: 800px;" data-tab-content>
+      <script type="module" id="#abusos">       
 
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
+        import define from "./index circular abusos.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
+    
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#abusos"));
+    
+        </script>
+    </div>
 
-    </script>
+    <div id="violaciones" style="width: 800px;" data-tab-content>
+      <script type="module">
+
+        import define from "./index circular violaciones.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
+    
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#violaciones"));
+    
+        </script>
+    </div>
+
+    <div id="vif" style="width: 800px;" data-tab-content>
+      <script type="module">
+
+        import define from "./index circular vif.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
+    
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#vif"));
+    
+        </script>
+    </div>
+
+    <div id="fconsumados" style="width: 800px;" data-tab-content>
+      <script type="module">
+
+        import define from "./index circular fconsumados.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
+    
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#fconsumados"));
+    
+        </script>
+    </div>
+
+    <div id="ffrustrados" style="width: 800px;" data-tab-content>
+      <script type="module">
+
+        import define from "./index circular ffrustrados.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
+    
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.id="#ffrustrados"));
+    
+        </script>
+    </div>
+
+  </div>
+
 </div>
 
-<div id="circulo_fconsumados" style="width:500px">
-    <script type="module">
-
-    import define from "./index circular fconsumados.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
-
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
-
-    </script>
-</div>
-
-<div id="circulo_ffrustrados" style="width:500px">
-    <script type="module">
-
-    import define from "./index circular ffrustrados.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
-
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
-
-    </script>
-</div>
-
-<div id="circulo_vifs" style="width:500px">
-    <script type="module">
-
-    import define from "./index circular vif.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
-
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
-
-    </script>
-</div>
-
-<div id="circulo_violaciones" style="width:500px">
-    <script type="module">
-
-    import define from "./index circular violaciones.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
-
-    const runtime = new Runtime();
-    const main = runtime.module(define, Inspector.into(document.body));
-
-    </script>
-</div>
 
 <div id="cuadro_organizaciones" style="width:500px">
-    <div>
-        <p class="parr" id="hola">¿Cómo puedo ayudar? <br> Te presentamos las siguientes organizaciones:</p>
-    </div>
+    <p class="parr" id="hola" style="font-size: 20px;"><br><br>¿Cómo puedo ayudar? <br> Te presentamos las siguientes organizaciones:</p>
     <div id="organizacion1" class="organizacion">
     <a target="_blank" href="http://fundacionhonra.cl/#INICIO" class="link_org">
       <h3>Fundación Honra</h3>

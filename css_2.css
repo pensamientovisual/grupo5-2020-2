@@ -6,7 +6,7 @@ body{
 }
 #def_int{
     position: absolute;
-    top: 280px;
+    top: 265px;
     left: 50px;
     width: 615px;
     height: 30px;
@@ -27,6 +27,7 @@ body{
     position: relative;
     left: 80px;
     top: 10px;
+
     float: right;
     }
 
@@ -54,8 +55,8 @@ nav{
     height: 120px;
     margin-right: 200px;
     position: relative;
-    top: 20;
-    left: 60px;
+    top: 20px;
+    left: 80px;
     font-size: 15px;
 
 }
@@ -124,7 +125,6 @@ nav{
     grid-template-columns: 250px 250px 250px 250px;
     justify-content: center;  
     text-align: center;
-    top: -10px;
     font-size: 20px;
 }
 
