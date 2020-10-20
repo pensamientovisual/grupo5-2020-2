@@ -1,41 +1,36 @@
-/* Código sacado de:https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs */
+/* Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs */
 
 [data-tab-content] {
     display: none;
   }
   
-  .active[data-tab-content] {
-    display: block;
-  }
+.active[data-tab-content] {
+  display: block;
+}
   
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 2px solid #B57EDC;
-  }
-  
-  .tab {
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .tab.active {
-    background-color: #B695C0;
-  }
-  
-  .tab:hover {
-    background-color: #B57EDC;
-  }
-  
-  .tab-content {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #B57EDC;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #B695C0;
+}
+
+.tab:hover {
+  background-color: #B57EDC;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
