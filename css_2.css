@@ -82,6 +82,28 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.text_org{
+    width: 700px;
+}
+
+#img_fundacion_honra{
+    position: relative;
+    left: 750px;
+    top: -175px;
+}
+
+#img_fundacion_antonia{
+    position: relative;
+    left: 750px;
+    top: -125px;
+}
+
+#img_corporacion_miles{
+    position: relative;
+    left: 750px;
+    top: -150px;
+}
+
 .link_org:link{
     color:white;
 }
