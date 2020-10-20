@@ -332,7 +332,7 @@ nav{
     border-bottom: 1px dotted black;
   }
 
-.I1{
+/* .I1{
     position: absolute;
     top: 500px;
     left:810px;
@@ -443,7 +443,7 @@ nav{
     left:840px;
     width: 350px;
     text-align: left;
-}
+} */
 .intrucciones{
     position: relative;
     top: 65px;
@@ -461,4 +461,59 @@ nav{
     background-color:#F5EEF8;
     width: 1200px;
     height: 1000px;
+}
+
+.A2016{
+    position:absolute;
+    left: 850px;
+    top: 500px;
+
+}
+#XV2016{
+    top: 500px;
+}
+#I2016{
+    top: 570px;
+}
+#II2016{
+    top: 640px;
+}
+#III2016{
+    top: 710px;
+}
+#IV2016{
+    top: 780px;
+}
+#V2016{
+    top: 850px;
+}
+#RM2016{
+    top: 920px;
+}
+#VI2016{
+    top: 990px;
+}
+#VII2016{
+    top: 1060px;
+}
+#XVI2016{
+    top: 1130px;
+}
+#VIII2016{
+    top: 1200px;
+}
+#IX2016{
+    top: 1160px;
+}
+#XIV2016{
+    top: 1215px;
+}
+#X2016{
+    top: 1270px;
+}
+#XI2016{
+    top: 1325px;
+}
+#XII2016{
+    top: 1380px;
 }

@@ -1,20 +1,20 @@
 $(document).ready(function(){
       /* MAPA */
-    $(".click1").hide();
-    $(".click2").hide();
-    $(".click3").hide();
-    $(".click4").hide();
-    $(".click5").hide();
-    $(".click6").hide();
-    $(".click7").hide();
-    $(".click8").hide();
-    $(".click9").hide();
-    $(".click10").hide();
-    $(".imagenes1").hide();
-    $(".imagenes2").hide();
-    $(".imagenes3").hide();
-    $(".imagenes4").hide();
-    $(".imagenes5").hide();
+    // $(".click1").hide();
+    // $(".click2").hide();
+    // $(".click3").hide();
+    // $(".click4").hide();
+    // $(".click5").hide();
+    // $(".click6").hide();
+    // $(".click7").hide();
+    // $(".click8").hide();
+    // $(".click9").hide();
+    // $(".click10").hide();
+    // $(".imagenes1").hide();
+    // $(".imagenes2").hide();
+    // $(".imagenes3").hide();
+    // $(".imagenes4").hide();
+    // $(".imagenes5").hide();
     $("#VF2").hide();
     $("#Fem2").hide();
     $("#D32").hide();
