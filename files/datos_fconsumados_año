@@ -1,0 +1,13 @@
+{
+ "name": "Femicidios consumados contra la mujer",
+ "children": [
+  {"name": "Femicidios consumados 2013", "value": 40},
+  {"name": "Femicidios consumados 2014", "value": 40},
+  {"name": "Femicidios consumados 2015", "value": 45},  
+  {"name": "Femicidios consumados 2016", "value": 34},
+  {"name": "Femicidios consumados 2017", "value": 44},  
+  {"name": "Femicidios consumados 2018", "value": 42},
+  {"name": "Femicidios consumados 2019", "value": 46},
+  {"name": "Femicidios consumados 2020", "value": 30}
+ ]
+}

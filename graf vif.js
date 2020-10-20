@@ -1,54 +1,61 @@
-// https://observablehq.com/@d3/bar-chart-race@3048
+// Código sacado de: https://observablehq.com/@mbostock/bar-chart-race-with-scrubber@3091
+import define1 from "./scrubber.js";
 
 export default function define(runtime, observer) {
   const main = runtime.module();
-  const fileAttachments = new Map([["data123.csv",new URL("./files/data123",import.meta.url)]]);
+  const fileAttachments = new Map([["data_vif.csv",new URL("./files/data_vif",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Cantidad de violencia hacia la mujer en cada mes por año
-`
-)});
-  main.variable().define("data", ["FileAttachment"], function(FileAttachment){return(
-FileAttachment("data123.csv").csv({typed: true})
-)});
-  main.variable(observer("viewof replay")).define("viewof replay", ["html"], function(html){return(
-html`<button>Replay`
-)});
-  main.variable().define("replay", ["Generators", "viewof replay"], (G, _) => G.input(_));
-  main.variable(observer("chart")).define("chart", ["replay","d3","width","height","bars","axis","labels","ticker","keyframes","duration","x","invalidation"], async function*(replay,d3,width,height,bars,axis,labels,ticker,keyframes,duration,x,invalidation)
-{
-  replay;
+md`# Cantidad de violencia intrafamiliar a la mujer por mes.
 
+Desde el 2016 hasta el primer semestre del 2020.`
+)});
+  main.variable(observer("viewof keyframe")).define("viewof keyframe", ["Scrubber","keyframes","formatDate","duration"], function(Scrubber,keyframes,formatDate,duration){return(
+Scrubber(keyframes, {
+  format: ([date]) => formatDate(date),
+  delay: duration,
+  loop: false
+})
+)});
+  main.variable().define("keyframe", ["Generators", "viewof keyframe"], (G, _) => G.input(_));
+  main.variable(observer("chart")).define("chart", ["d3","width","height","bars","axis","labels","ticker","invalidation","duration","x"], function(d3,width,height,bars,axis,labels,ticker,invalidation,duration,x)
+{
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width, height]);
+      .attr("viewBox", [0, 0, width, height])
+      .style("background", "#E9DFEC");
 
   const updateBars = bars(svg);
   const updateAxis = axis(svg);
   const updateLabels = labels(svg);
   const updateTicker = ticker(svg);
 
-  yield svg.node();
+  invalidation.then(() => svg.interrupt());
 
-  for (const keyframe of keyframes) {
-    const transition = svg.transition()
-        .duration(duration)
-        .ease(d3.easeLinear);
+  return Object.assign(svg.node(), {
+    update(keyframe) {
+      const transition = svg.transition()
+          .duration(duration)
+          .ease(d3.easeLinear);
 
-    // Extract the top bar’s value.
-    x.domain([0, keyframe[1][0].value]);
+      // Extract the top bar’s value.
+      x.domain([0, keyframe[1][0].value]);
 
-    updateAxis(keyframe, transition);
-    updateBars(keyframe, transition);
-    updateLabels(keyframe, transition);
-    updateTicker(keyframe, transition);
-
-    invalidation.then(() => svg.interrupt());
-    await transition.end();
-  }
+      updateAxis(keyframe, transition);
+      updateBars(keyframe, transition);
+      updateLabels(keyframe, transition);
+      updateTicker(keyframe, transition);
+    }
+  });
 }
 );
+  main.variable(observer("update")).define("update", ["chart","keyframe"], function(chart,keyframe){return(
+chart.update(keyframe)
+)});
+  main.variable().define("data", ["FileAttachment"], function(FileAttachment){return(
+FileAttachment("data_vif.csv").csv({typed: true})
+)});
   main.variable().define("duration", function(){return(
-500
+250
 )});
   main.variable().define("n", function(){return(
 12
@@ -89,16 +96,7 @@ function rank(value) {
   return keyframes;
 }
 );
-  main.variable().define("nameframes", ["d3","keyframes"], function(d3,keyframes){return(
-d3.groups(keyframes.flatMap(([, data]) => data), d => d.name)
-)});
-  main.variable().define("prev", ["nameframes","d3"], function(nameframes,d3){return(
-new Map(nameframes.flatMap(([, data]) => d3.pairs(data, (a, b) => [b, a])))
-)});
-  main.variable().define("next", ["nameframes","d3"], function(nameframes,d3){return(
-new Map(nameframes.flatMap(([, data]) => d3.pairs(data)))
-)});
-  main.variable().define("bars", ["n","color","y","x","prev","next"], function(n,color,y,x,prev,next){return(
+  main.variable().define("bars", ["n","color","y","x"], function(n,color,y,x){return(
 function bars(svg) {
   let bar = svg.append("g")
       .attr("fill-opacity", 0.6)
@@ -111,19 +109,19 @@ function bars(svg) {
         .attr("fill", color)
         .attr("height", y.bandwidth())
         .attr("x", x(0))
-        .attr("y", d => y((prev.get(d) || d).rank))
-        .attr("width", d => x((prev.get(d) || d).value) - x(0)),
+        .attr("y", y(n))
+        .attr("width", d => x(d.value) - x(0)),
       update => update,
       exit => exit.transition(transition).remove()
-        .attr("y", d => y((next.get(d) || d).rank))
-        .attr("width", d => x((next.get(d) || d).value) - x(0))
+        .attr("y", y(n))
+        .attr("width", d => x(d.value) - x(0))
     )
     .call(bar => bar.transition(transition)
       .attr("y", d => y(d.rank))
       .attr("width", d => x(d.value) - x(0)));
 }
 )});
-  main.variable().define("labels", ["n","x","prev","y","next","textTween"], function(n,x,prev,y,next,textTween){return(
+  main.variable().define("labels", ["n","x","y","textTween","parseNumber"], function(n,x,y,textTween,parseNumber){return(
 function labels(svg) {
   let label = svg.append("g")
       .style("font", "bold 12px var(--sans-serif)")
@@ -135,7 +133,7 @@ function labels(svg) {
     .data(data.slice(0, n), d => d.name)
     .join(
       enter => enter.append("text")
-        .attr("transform", d => `translate(${x((prev.get(d) || d).value)},${y((prev.get(d) || d).rank)})`)
+        .attr("transform", d => `translate(${x(d.value)},${y(n)})`)
         .attr("y", y.bandwidth() / 2)
         .attr("x", -6)
         .attr("dy", "-0.25em")
@@ -147,12 +145,13 @@ function labels(svg) {
           .attr("dy", "1.15em")),
       update => update,
       exit => exit.transition(transition).remove()
-        .attr("transform", d => `translate(${x((next.get(d) || d).value)},${y((next.get(d) || d).rank)})`)
-        .call(g => g.select("tspan").tween("text", d => textTween(d.value, (next.get(d) || d).value)))
+        .attr("transform", d => `translate(${x(d.value)},${y(n)})`)
     )
     .call(bar => bar.transition(transition)
       .attr("transform", d => `translate(${x(d.value)},${y(d.rank)})`)
-      .call(g => g.select("tspan").tween("text", d => textTween((prev.get(d) || d).value, d.value))));
+      .call(g => g.select("tspan").tween("text", function(d) {
+          return textTween(parseNumber(this.textContent), d.value);
+        })));
 }
 )});
   main.variable().define("textTween", ["d3","formatNumber"], function(d3,formatNumber){return(
@@ -162,6 +161,9 @@ function textTween(a, b) {
     this.textContent = formatNumber(i(t));
   };
 }
+)});
+  main.variable().define("parseNumber", function(){return(
+string => +string.replace(/,/g, "")
 )});
   main.variable().define("formatNumber", ["d3"], function(d3){return(
 d3.format(",d")
@@ -187,7 +189,7 @@ function axis(svg) {
   main.variable().define("ticker", ["barSize","width","margin","n","formatDate","keyframes"], function(barSize,width,margin,n,formatDate,keyframes){return(
 function ticker(svg) {
   const now = svg.append("text")
-      .style("font", `bold ${barSize}px var(--sans-serif)`)
+      .style("font", `bold ${barSize*5}px var(--sans-serif)`)
       .style("font-variant-numeric", "tabular-nums")
       .attr("text-anchor", "end")
       .attr("x", width - 6)
@@ -235,5 +237,7 @@ margin.top + barSize * n + margin.bottom
   main.variable().define("d3", ["require"], function(require){return(
 require("d3@6")
 )});
+  const child1 = runtime.module(define1);
+  main.import("Scrubber", child1);
   return main;
 }

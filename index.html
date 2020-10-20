@@ -365,19 +365,112 @@
     </div>
 </div>
 
-<div id="d3_container" style="width:500px">
-    
-    <script> var svg = d3.select("#d3_container").append("svg"); </script> 
-    <script type="module" >
+<div id="barras_vif" style="width:500px">
+    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
 
-      import define from "./index.js";
+    <script type="module" >
+      import define from "./index vif.js";
       import {Runtime, Library, Inspector} from "./runtime.js";
       
       const runtime = new Runtime();
       const main = runtime.module(define, Inspector.into(document.body));
+    </script>
+</div>
+
+<div id="barras_abusos" style="width:500px">
+    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
+
+    <script type="module" >
+      import define from "./index abusos.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
       
-      </script>
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.body));
+    </script>
+</div>
+
+<div id="barras_violaciones" style="width:500px">
+    <script> var svg = d3.select("#barras_vif").append("svg"); </script> 
+
+    <script type="module" >
+      import define from "./index violaciones.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+      
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.body));
+    </script>
+</div>
+
+<div id="circulo_total" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular por año.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+</div>
     
+<div id="circulo_abusos" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular abusos.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+</div>
+
+<div id="circulo_fconsumados" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular fconsumados.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+</div>
+
+<div id="circulo_ffrustrados" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular ffrustrados.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+</div>
+
+<div id="circulo_vifs" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular vif.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+</div>
+
+<div id="circulo_violaciones" style="width:500px">
+    <script type="module">
+
+    import define from "./index circular violaciones.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
 </div>
 
 <div id="cuadro_organizaciones" style="width:500px">

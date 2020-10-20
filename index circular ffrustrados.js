@@ -1,0 +1,1 @@
+export {default} from "./graf circular ffrustrados.js";
