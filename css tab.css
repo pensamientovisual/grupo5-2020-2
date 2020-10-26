@@ -1,36 +1,47 @@
 /* Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs */
 
 [data-tab-content] {
-    display: none;
-  }
-  
-.active[data-tab-content] {
-  display: block;
+  display: none;
 }
-  
+
+.active[data-tab-content] {
+display: block;
+}
+
 .tabs {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  border: 2px solid #B57EDC;
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color:  #3c2a44;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: white;
+justify-content: center;  
+text-align: center;
+height: 90px;
+/* display: grid;
+grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px; */
+font-size: 12px;
+position: relative;
+
 }
 
 .tab {
-  cursor: pointer;
-  padding: 10px;
+cursor: pointer;
+padding: 10px;
 }
 
 .tab.active {
-  background-color: #B695C0;
+background-color: #B695C0;
 }
 
 .tab:hover {
-  background-color: #B57EDC;
+background-color: #B57EDC;
 }
 
 .tab-content {
-  margin-left: 20px;
-  margin-right: 20px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
 }

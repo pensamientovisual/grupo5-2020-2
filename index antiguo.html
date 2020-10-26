@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grupo 5 - Pensamiento Visual</title>
   <link href="index_style.css" rel="stylesheet" />
-  <link href="inspector.css" rel="stylesheet" />
   <link href="inspector graf circular.css" rel="stylesheet" />
   <link href="css tab.css" rel="stylesheet" />
   <script type="text/javascript" src="jquery-1.10.1.js"></script>
@@ -24,9 +23,6 @@
     #cuadro_organizaciones{padding-top:50px;height:100px;color: #fff}
     #section41 {padding-top:50px;height:100px;color: #fff}
     #section42 {padding-top:50px;height:100px;color: #fff}
-    #graficos_barras {color: #fff}
-    #graficos_circulares {color: #fff}
-    #botonplay {color: #000000}
   </style>
 
 </head>
@@ -285,78 +281,251 @@
 </div>
 <!-- Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs-->
 
-<div id="graficos_barras">
+<div id="graf_años">
 
-    <h1><br><br>Compara según los meses</h1>
-    <script src="script tab1.js" defer></script>
+  <script src="script tab.js" defer></script>
+
+<ul class="tabs">
+    <li data-tab-target="#GRchile" class="active tab">Chile</li>
+    <li data-tab-target="#GR15" class="tab">Arica y Parinacota</li>
+    <li data-tab-target="#GR1" class="tab">Tarapacá</li>
+    <li data-tab-target="#GR2" class="tab">Antofagasta</li>
+    <li data-tab-target="#GR3" class="tab">Atacama</li>
+    <li data-tab-target="#GR4" class="tab">Coquimbo</li>
+    <li data-tab-target="#GR5" class="tab">Valparaíso</li>
+    <li data-tab-target="#GRrm" class="tab">Metropolitana</li>
+    <li data-tab-target="#GR6" class="tab">Libertador General Bernardo O'Higgins</li>
+    <li data-tab-target="#GR7" class="tab">Maule</li>
+    <li data-tab-target="#GR16" class="tab">Ñuble</li>
+    <li data-tab-target="#GR8" class="tab">Bío-Bío</li>
+    <li data-tab-target="#GR9" class="tab">La Araucanía</li>
+    <li data-tab-target="#GR14" class="tab">Los Ríos</li>
+    <li data-tab-target="#GR10" class="tab">Los Lagos</li>
+    <li data-tab-target="#GR11" class="tab">Aysén</li>
+    <li data-tab-target="#GR12" class="tab">Magallanes y la Antártica Chilena</li>
+  </ul>
+
+  <div class="tab-content">
+      
+      <div id="GRchile" data-tab-content class="active" style="width: 10px;">
+
+      <script type="module" >
+      import define from "/indexchile.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GRchile"));
+      </script>  
+
+      </div>
+      
+
+      <div id="GR15" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index15.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR15"));
+      </script>
+
+      </div>
+      
+      
+      <div id="GR1" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index1.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
   
-  <ul class="tabs">
-      <li data-tab-target="#barras_abusos" class="active tab">Abusos</li>
-      <li data-tab-target="#barras_violaciones" class="tab">Violaciones</li>
-      <li data-tab-target="#barras_vif" class="tab">Violencia intrafamiliar</li>
-    </ul>
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR1"));
+      </script>
+         
+      </div>
+
+
+      <div id="GR2" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index2.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
   
-    <div class="tab-content">
-        
-        <div id="barras_abusos" data-tab-content class="active" style="width: 1000px;">
-        
-            <script type="module">
-              import define from "./index abusos.js";
-              import {Runtime, Library, Inspector} from "./runtime.js";
-              
-              const runtime = new Runtime();
-              const main = runtime.module(define, Inspector.into(document.id="#barras_abusos"));
-            </script>
-        </div>
-        
-        <div id="barras_vif" data-tab-content style="width: 1000px;">
-        
-            <script type="module">
-              import define from "./index vif.js";
-              import {Runtime, Library, Inspector} from "./runtime.js";
-              
-              const runtime = new Runtime();
-              const main = runtime.module(define, Inspector.into(document.id="#barras_vif"));
-            </script>
-        </div>
-        
-        <div id="barras_violaciones" data-tab-content style="width: 1000px;">
-        
-            <script type="module">
-              import define from "./index violaciones.js";
-              import {Runtime, Library, Inspector} from "./runtime.js";
-              
-              const runtime = new Runtime();
-              const main = runtime.module(define, Inspector.into(document.id="#barras_violaciones"));
-            </script>
-        </div>
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR2"));
+      </script>
+         
+      </div>
+
+      <div id="GR3" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index3.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
   
-    </div>
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR3"));
+      </script>
+         
+      </div>
+
+      <div id="GR4" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index4.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
   
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR4"));
+      </script>
+         
+      </div>
+
+      <div id="GR5" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index5.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR5"));
+      </script>
+         
+      </div>
+
+      <div id="GRrm" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./indexRM.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GRrm"));
+      </script>
+         
+      </div>
+
+      <div id="GR6" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index6.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR6"));
+      </script>
+         
+      </div>
+
+      <div id="GR7" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index7.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR7"));
+      </script>
+         
+      </div>
+
+      <div id="GR16" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index16.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR16"));
+      </script>
+         
+      </div>
+
+      <div id="GR8" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index8.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR8"));
+      </script>
+         
+      </div>
+
+      <div id="GR9" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index9.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR9"));
+      </script>
+         
+      </div>
+
+      <div id="GR14" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index14.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR14"));
+      </script>
+         
+      </div>
+
+      <div id="GR10" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index10.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR10"));
+      </script>
+         
+      </div>
+
+      <div id="GR11" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index11.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR11"));
+      </script>
+         
+      </div>
+
+      <div id="GR12" data-tab-content style="width: 1000px;">
+
+      <script type="module" >
+      import define from "./index12.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+  
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.id="#GR12"));
+      </script>
+         
+      </div>
+
   </div>
+
+</div>
 
 <div>
   <p class="conexion">Sin embargo, la violencia intrafamiliar a la mujer no es la única expresión de violencia de género, existe otros tipos de violencia como abusos sexuales, violaciones y femicidios.</p>
 </div>
 <!-- Código sacado de: https://github.com/WebDevSimplified/HTML-CSS-JS-Tabs-->
 
-<div id="graficos_circulares">
-    <h1><br><br>Compara según el año</h1>
+<div id="grafico_circular">
 
-  <script src="script tab2.js" defer></script>
-
-<ul class="tabs">
-    <li data-tab-target="#global" class="active tab">Global</li>
-    <li data-tab-target="#abusos" class="tab">Abusos</li>
-    <li data-tab-target="#violaciones" class="tab">Violaciones</li>
-    <li data-tab-target="#vif" class="tab">Violencia intrafamiliar</li>
-    <li data-tab-target="#fconsumados" class="tab">Femicidios consumados</li>
-    <li data-tab-target="#ffrustrados" class="tab">Femicidios frustrados</li>
-  </ul>
-
-  <div class="tab-content">
-
-    <div id="global" data-tab-content class="active" style="width: 800px;">
+    <div id="global" style="width: 1000px;">
       <script type="module" id="#global">
 
         import define from "./index circular por año.js";
@@ -367,68 +536,6 @@
     
         </script>
     </div>
-
-    <div id="abusos" style="width: 800px;" data-tab-content>
-      <script type="module" id="#abusos">       
-
-        import define from "./index circular abusos.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#abusos"));
-    
-        </script>
-    </div>
-
-    <div id="violaciones" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular violaciones.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#violaciones"));
-    
-        </script>
-    </div>
-
-    <div id="vif" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular vif.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#vif"));
-    
-        </script>
-    </div>
-
-    <div id="fconsumados" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular fconsumados.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#fconsumados"));
-    
-        </script>
-    </div>
-
-    <div id="ffrustrados" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular ffrustrados.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#ffrustrados"));
-    
-        </script>
-    </div>
-
-  </div>
 
 </div>
 

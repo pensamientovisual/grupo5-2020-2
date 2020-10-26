@@ -346,11 +346,6 @@
 
 <ul class="tabs">
     <li data-tab-target="#global" class="active tab">Global</li>
-    <li data-tab-target="#abusos" class="tab">Abusos</li>
-    <li data-tab-target="#violaciones" class="tab">Violaciones</li>
-    <li data-tab-target="#vif" class="tab">Violencia intrafamiliar</li>
-    <li data-tab-target="#fconsumados" class="tab">Femicidios consumados</li>
-    <li data-tab-target="#ffrustrados" class="tab">Femicidios frustrados</li>
   </ul>
 
   <div class="tab-content">
@@ -363,66 +358,6 @@
     
         const runtime = new Runtime();
         const main = runtime.module(define, Inspector.into(document.id="#global"));
-    
-        </script>
-    </div>
-
-    <div id="abusos" style="width: 800px;" data-tab-content>
-      <script type="module" id="#abusos">       
-
-        import define from "./index circular abusos.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#abusos"));
-    
-        </script>
-    </div>
-
-    <div id="violaciones" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular violaciones.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#violaciones"));
-    
-        </script>
-    </div>
-
-    <div id="vif" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular vif.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#vif"));
-    
-        </script>
-    </div>
-
-    <div id="fconsumados" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular fconsumados.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#fconsumados"));
-    
-        </script>
-    </div>
-
-    <div id="ffrustrados" style="width: 800px;" data-tab-content>
-      <script type="module">
-
-        import define from "./index circular ffrustrados.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-    
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.id="#ffrustrados"));
     
         </script>
     </div>

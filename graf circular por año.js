@@ -4,9 +4,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["datos.json",new URL("./files/datos_por_año",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Crimenes hacia la mujer por año
-
-Haz click en una sección para tener más información y en el centro para devolverte. Si dejas el mouse quieto sobre la sección te aparecerá la cantidad.`
+md`# AGREGAR INSTRUCCIONES.`
 )});
   main.variable(observer("chart")).define("chart", ["partition","data","d3","width","color","arc","format","radius"], function(partition,data,d3,width,color,arc,format,radius)
 {
@@ -15,8 +13,10 @@ Haz click en una sección para tener más información y en el centro para devol
   root.each(d => d.current = d);
 
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width, width])
-      .style("font", "10px sans-serif");
+      .attr("viewBox", [-200, 0, 1200, 1200])
+      .style("fill", "white")
+      .style("font-weight", "bold")
+      .style("font", "20px verdana");
 
   const g = svg.append("g")
       .attr("transform", `translate(${width / 2},${width / 2})`);
@@ -27,7 +27,9 @@ Haz click en una sección para tener más información y en el centro para devol
     .join("path")
       .attr("fill", d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
       .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
-      .attr("d", d => arc(d.current));
+      .attr("d", d => arc(d.current))
+      .on("mouseover", (d, i, nodes) => d3.select(nodes[i]).attr("fill-opacity", d => 1))
+      .on("mouseout", (d, i, nodes) => d3.select(nodes[i]).attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0));
 
   path.filter(d => d.children)
       .style("cursor", "pointer")
@@ -54,6 +56,9 @@ Haz click en una sección para tener más información y en el centro para devol
       .attr("fill", "none")
       .attr("pointer-events", "all")
       .on("click", clicked);
+
+/*   parent.append("text")
+      .text("#hola"); */
 
   function clicked(event, p) {
     parent.datum(p.parent || root);
@@ -119,7 +124,7 @@ data => {
 }
 )});
   main.variable().define("color", ["d3","data"], function(d3,data){return(
-d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, data.children.length + 1))
+d3.scaleOrdinal(d3.quantize(d3.interpolateRgb.gamma(0.5)("#4B0082", "#EE82EE"), data.children.length + 1))
 )});
   main.variable().define("format", ["d3"], function(d3){return(
 d3.format(",d")

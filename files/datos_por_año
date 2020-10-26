@@ -2,156 +2,80 @@
  "name": "Crimenes contra la mujer",
  "children": [
   {
-   "name": "2013",
-   "children": [
-    {
-     "name": "Otros",
-     "children": [
-      {"name": "Abusos", "value": 7150},
-      {"name": "Violaciones", "value": 2019},
-      {
-        "name": "Femicidios",
-        "children": [
-        {"name": "Femicidios consumados", "value": 40},
-        {"name": "Femicidios frustrados", "value": 78}
-        ]
-      }
-     ]
-    },
-    {"name": "Violencia Intrafamiliar", "value": 111428}
-   ]
-  },{
-   "name": "2014",
-   "children": [
-    {
-     "name": "Otros",
-     "children": [
-      {"name": "Abusos", "value": 6020},
-      {"name": "Violaciones", "value": 1847},
-      {
-        "name": "Femicidios",
-        "children": [
-        {"name": "Femicidios consumados", "value": 40},
-        {"name": "Femicidios frustrados", "value": 103}
-        ]
-      }
-     ]
-    },
-    {"name": "Violencia Intrafamiliar", "value": 103708}
-   ]
-  },{
-   "name": "2015",
-   "children": [
-    {
-     "name": "Otros",
-     "children": [
-      {"name": "Abusos", "value": 5442},
-      {"name": "Violaciones", "value": 1743},
-      {
-        "name": "Femicidios",
-        "children": [
-        {"name": "Femicidios consumados", "value": 45},
-        {"name": "Femicidios frustrados", "value": 112}
-        ]
-      }
-     ]
-    },
-    {"name": "Violencia Intrafamiliar", "value": 95278}
-   ]
-  },{
    "name": "2016",
    "children": [
     {
-     "name": "Otros",
+     "name": "Otros delitos",
      "children": [
       {"name": "Abusos", "value": 5547},
       {"name": "Violaciones", "value": 1727},
       {
         "name": "Femicidios",
         "children": [
-        {"name": "Femicidios consumados", "value": 34},
-        {"name": "Femicidios frustrados", "value": 129}
+        {"name": "Consumados", "value": 34},
+        {"name": "Frustrados", "value": 129}
         ]
       }
      ]
     },
-    {"name": "Violencia Intrafamiliar", "value": 91128}
+    {"name": "VIF", "value": 91128}
    ]
   },{
    "name": "2017",
    "children": [
     {
-     "name": "Otros",
+     "name": "Otros delitos",
      "children": [
       {"name": "Abusos", "value": 5765},
       {"name": "Violaciones", "value": 1726},
       {
         "name": "Femicidios",
         "children": [
-        {"name": "Femicidios consumados", "value": 44},
-        {"name": "Femicidios frustrados", "value": 115}
+        {"name": "Consumados", "value": 44},
+        {"name": "Frustrados", "value": 115}
         ]
       }
      ]
     },
-    {"name": "Violencia Intrafamiliar", "value": 90087}
+    {"name": "VIF", "value": 90087}
    ]
   },{
    "name": "2018",
    "children": [
     {
-     "name": "Otros",
+     "name": "Otros delitos",
      "children": [
       {"name": "Abusos", "value": 6605},
       {"name": "Violaciones", "value": 2002},
       {
         "name": "Femicidios",
         "children": [
-        {"name": "Femicidios consumados", "value": 42},
-        {"name": "Femicidios frustrados", "value": 121}
+        {"name": "Consumados", "value": 42},
+        {"name": "Frustrados", "value": 121}
         ]
       }
      ]
     },
-    {"name": "Violencia Intrafamiliar", "value": 86445}
+    {"name": "VIF", "value": 86445}
    ]
   },{
    "name": "2019",
    "children": [
     {
-     "name": "Otros",
+     "name": "Otros delitos",
      "children": [
       {"name": "Abusos", "value": 7543},
       {"name": "Violaciones", "value": 2241},
       {
         "name": "Femicidios",
         "children": [
-        {"name": "Femicidios consumados", "value": 46},
-        {"name": "Femicidios frustrados", "value": 109}
+        {"name": "Consumados", "value": 46},
+        {"name": "Frustrados", "value": 109}
         ]
       }
      ]
     },
-    {"name": "Violencia Intrafamiliar", "value": 92896}
-   ]
-  },{
-   "name": "2020",
-   "children": [
-    {
-     "name": "Otros",
-     "children": [
-      {"name": "Abusos", "value": 3252},
-      {"name": "Violaciones", "value": 1024},
-      {
-        "name": "Femicidios",
-        "children": [
-        {"name": "Femicidios consumados", "value": 30},
-        {"name": "Femicidios frustrados", "value": 105}
-        ]
-      }
-     ]
-    },
-    {"name": "Violencia Intrafamiliar", "value": 42453}
+    {"name": "VIF", "value": 92896}
    ]
   }
  ]
