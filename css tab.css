@@ -10,34 +10,39 @@ display: block;
 
 .tabs {
 display: flex;
-justify-content: space-around;
+align-items: center;
 list-style-type: none;
 margin: 0;
 padding: 0;
 background-color:  #3c2a44;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: white;
-justify-content: center;  
+color: white; 
 text-align: center;
 height: 55px;
-/* display: grid;
-grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px 80px; */
+width: 1200px;
 font-size: 12px;
-position: relative;
-
 }
 
 .tab {
 cursor: pointer;
+display: flex;
+align-items: center;
 padding: 10px;
+height: 55px;
 }
 
 .tab.active {
 background-color: #B695C0;
+height: 55px;
+display: flex;
+align-items: center;
 }
 
 .tab:hover {
 background-color: #B57EDC;
+height: 55px;
+display: flex;
+align-items: center;
 }
 
 .tab-content {

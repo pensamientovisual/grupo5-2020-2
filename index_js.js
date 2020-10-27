@@ -81,7 +81,9 @@ $(document).ready(function(){
     $(".infoboton-box").hide();
     $(".infoboton-box2").hide();
     $(".infoboton-box3").hide();
-
+    $(".infoboton-box4").hide();
+   
+    
     $("#TRegion").hide();
  
     $("#mensaje").hide();
@@ -93,7 +95,7 @@ $(document).ready(function(){
   $("#INT1").mouseenter(function(){
     $("#int1").show();
 });
-$("INT1").mouseleave(function(){
+$("#INT1").mouseleave(function(){
     $("#int1").hide();
     });
   $(".infoboton").mouseenter(function(){
@@ -102,18 +104,28 @@ $("INT1").mouseleave(function(){
   $(".infoboton").mouseleave(function(){
     $(".infoboton-box").hide();
     });
+  $(".infoboton2").mouseenter(function(){
+        $(".infoboton-box2").show();
+  });
+  $(".infoboton2").mouseleave(function(){
+      $(".infoboton-box2").hide();
+  });
   $(".infoboton3").mouseenter(function(){
           $(".infoboton-box3").show();
     });
     $(".infoboton3").mouseleave(function(){
         $(".infoboton-box3").hide();
     });
-    $(".infoboton2").mouseenter(function(){
-            $(".infoboton-box2").show();
-        });
-    $(".infoboton2").mouseleave(function(){
-    $(".infoboton-box2").hide();
-    });
+    $(".infoboton4").mouseenter(function(){
+        $(".infoboton-box4").show();
+  });
+  $(".infoboton4").mouseleave(function(){
+      $(".infoboton-box4").hide();
+  });
+   
+    
+
+
   regiones = $(".region");
   regiones.mouseenter(function(){
       var nombreregion = $(this).attr("title");
@@ -132,21 +144,21 @@ $("INT1").mouseleave(function(){
         var fanking = "F19"+idregion}
       $("#"+ranking).css("color", "#6C3483").css("font-weight","bold");
       $("#"+fanking).css("color", "#af457d").css("font-weight","bold");
-       $("#TVF2").hide();
-       $(".infoboton3").hide();
-       $(".infoboton2").hide();
-       $("#TVF").hide();
-       $("#TRegion").show();
-       $("#TRegion").text(nombreregion).css("position","relative").css("top","41px");
+    //    $("#TVF2").hide();
+    //    $(".infoboton3").hide();
+    //    $(".infoboton2").hide();
+    //    $("#TVF").hide();
+    //    $("#TRegion").show();
+    //     $("#TRegion").text(nombreregion);
        $(this).fadeTo("fast", 0.5);
   });
 
   regiones.mouseleave(function(){
-    $("#TRegion").hide();
-    $("#TVF2").show();
-    $(".infoboton3").show();
-    $(".infoboton2").show();
-    $("#TVF").show();
+    // $("#TRegion").hide();
+    // $("#TVF2").show();
+    // $(".infoboton3").show();
+    // $(".infoboton2").show();
+    // $("#TVF").show();
       $(".R16").css("color","white").css("font-weight","normal");
       $(".R17").css("color","white").css("font-weight","normal");
       $(".R18").css("color","white").css("font-weight","normal");

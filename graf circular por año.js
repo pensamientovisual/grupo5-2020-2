@@ -4,7 +4,8 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["datos.json",new URL("./files/datos_por_año",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# AGREGAR INSTRUCCIONES.`
+md`
+`
 )});
   main.variable(observer("chart")).define("chart", ["partition","data","d3","width","color","arc","format","radius"], function(partition,data,d3,width,color,arc,format,radius)
 {
@@ -13,7 +14,7 @@ md`# AGREGAR INSTRUCCIONES.`
   root.each(d => d.current = d);
 
   const svg = d3.create("svg")
-      .attr("viewBox", [-200, 0, 1200, 1200])
+      .attr("viewBox", [-50, 0, 1000, 1000])
       .style("fill", "white")
       .style("font-weight", "bold")
       .style("font", "20px verdana");
@@ -28,9 +29,9 @@ md`# AGREGAR INSTRUCCIONES.`
       .attr("fill", d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
       .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
       .attr("d", d => arc(d.current))
-      .on("mouseover", (d, i, nodes) => d3.select(nodes[i]).attr("fill-opacity", d => 1))
+      /* .on("mouseover", (d, i, nodes) => d3.select(nodes[i]).attr("fill-opacity", d => 1))
       .on("mouseout", (d, i, nodes) => d3.select(nodes[i]).attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0));
-
+ */
   path.filter(d => d.children)
       .style("cursor", "pointer")
       .on("click", clicked);
