@@ -111,11 +111,10 @@ g => g
 data.length * 40 + margin.top + margin.bottom
 )});
   main.variable().define("margin", function(){return(
-{top: 30, right: 100, bottom: 10, left: 100}
+{top: 30, right: 400, bottom: 10, left: 400}
 )});
   main.variable().define("d3", ["require"], function(require){return(
 require("d3@6")
 )});
   return main;
 }
-

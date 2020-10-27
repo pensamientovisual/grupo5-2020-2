@@ -3,8 +3,8 @@ body{
     background-repeat: no-repeat;
     background-color: #0f0f0f;
     margin: 50px;
-    padding: 20px;
-    display: block;
+    padding: 20px;/* 
+    display: block; */
 }
 
  #mujer_moreton{
@@ -126,11 +126,11 @@ nav{
 #definiciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: 300px 300px 300px 300px;
     justify-content: center;
     text-align: center;
     padding-top: 15px;
-    width: 1000px;
+    width: 1200px;
     height: 60px;
     background-color:  #3c2a44;
     display: grid;
@@ -142,8 +142,8 @@ nav{
     justify-content: center;
     text-align: center;
     padding-top: 15px;
-    display: grid;
-    width: 990px;
+    display: grid;/* 
+    width: 990px; */
 }
 .VF::before,
 .VF::after{
@@ -568,9 +568,28 @@ nav{
     position: relative;
     font-size: 20px;
     font-weight: bold;
-
 }
-
+.subtitulo1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+.subtitulo2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+}
+#texto_2020{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    top: 500px;
+    height: 1000px;
+}
 .parr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -1273,6 +1292,37 @@ nav{
     font-style: italic;
     z-index: 10;
 }
+#texto_2020{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    width: 800px;
+    height: 160px;
+    left: 200px;
+    top: 40px;
+}
+#titulo_graf_circular{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    height: 80px;/* 
+    width: 950px;
+    left: 500px; */
+}
+.modo_de_uso{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    top:0px;
+}
+.instrucciones{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
 
 .conexion{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1280,6 +1330,40 @@ nav{
     font-size: 15px;
     width: 980px;
     bottom: 20px;
+}
+.conexion1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;/* 
+    width: 980px; */
+    bottom: 20px;
+}
+.conexion2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 980px;
+    bottom: 20px;
+}
+.conexion3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    bottom: 20px;
+    top: 820px;
+}
+.conexion4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    height: 300px;
+    bottom: 20px;
+    position: relative;
+}
+#graf_años{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
 }
 #cita{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1364,7 +1448,7 @@ nav{
     position: relative;
     left: 410px;
 }
-#graf{
-    grid-template-columns: 600px 250px;
+#grafico_circular{
+    grid-template-columns: 600px 300px;
     display: grid;
 }

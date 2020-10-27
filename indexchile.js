@@ -1,1 +1,1 @@
-export {default} from "/regionchile.js";
+export {default} from "./regionchile.js";
