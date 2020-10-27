@@ -13,6 +13,24 @@ body{
     position: relative;
  }
 
+ #mujer_moreton1{
+    width: 200px;
+    height: 300px;
+    position: relative;
+
+ }
+ #mujer_moreto2{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    bottom: 100px;
+ }
+ #mujer_moreto4{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    bottom: 100px;
+ }
 nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -22,10 +40,10 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     color: #7a5496;
     margin: auto;
-    width: 80%;
+    width: 90%;
     padding: 10px;
     position: relative;/* 
     left: -100px; */
@@ -37,12 +55,12 @@ nav{
     height: 40px;
     background-color: #D0D3D4;
     position: relative;
-    left: 350px;
+    left: 630px;
     padding: 5px;
     line-height: 15px;
     border-radius: 5px;
     z-index: 200;
-    bottom: 80px;
+    bottom: 70px;
 
 }
 
@@ -363,13 +381,15 @@ nav{
     width: 25px;
     height: 25px;
     left: 5px;
+    bottom: 25px;
     z-index: 100;
 }
 .Fem{
-    position: relative;
+    position: absolute;
     width: 25px;
     height: 25px;
-    left: 5px;
+    left: 45px;
+    top: 230px;
     z-index: 100;
 }
 .infoboton:hover .infoboton-box{
@@ -478,8 +498,8 @@ nav{
     border-radius: 5px;
     position: absolute;
     left: 445px;
-    top:1410px;
     width: 200px;
+    top: 890px;
 
 }
 .infoboton-box4::after {
@@ -502,8 +522,9 @@ nav{
     border-radius: 5px;
     position: relative;
     left: 140px;
-    top:-40px;
+    top:-30px;
     width: 200px;
+    font-size: 10px;
 
 }
 .box-As::after {
@@ -525,8 +546,9 @@ nav{
     border-radius: 5px;
     position: relative;
     left: 140px;
-    top:-40px;
+    top:-50px;
     width: 200px;
+    font-size: 10px;
 
 }
 .box-Vio::after {
@@ -538,6 +560,7 @@ nav{
     position: absolute;
     left: -8px;
     top:5px;
+
 }
 .box-Fem{
     color: black;
@@ -548,9 +571,9 @@ nav{
     border-radius: 5px;
     position: relative;
     left: 140px;
-    top:-40px;
+    top:-45px;
     width: 200px;
-
+    font-size: 10px;
 }
 .box-Fem::after {
     content: "";
@@ -561,6 +584,13 @@ nav{
     position: absolute;
     top: 5px;
     left: -8px;
+}
+#subtitulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
 }
 .subtitulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -587,8 +617,9 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     position: relative;
-    top: 500px;
-    height: 1000px;
+    text-align: center;
+    justify-content: center;
+    left: -50px;
 }
 .parr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1231,7 +1262,7 @@ nav{
 }
 #FRanking2016{
     position: relative;
-    bottom: 675px;
+    bottom: 290px;
     left: 150px;
     width:300px;
     height:255px;
@@ -1245,7 +1276,7 @@ nav{
 }
 #FRanking2017{
     position: relative;
-    bottom: 675px;
+    bottom: 290px;
     left: 150px;
     width:300px;
     height:255px;
@@ -1259,7 +1290,7 @@ nav{
 }
 #FRanking2018{
     position: relative;
-    bottom: 675px;
+    bottom: 290px;
     left: 150px;
     width:300px;
     height:255px;
@@ -1273,7 +1304,7 @@ nav{
 }
 #FRanking2019{
     position: relative;
-    bottom: 675px;
+    bottom: 290px;
     left: 150px;
     width:300px;
     height:255px;
@@ -1306,9 +1337,11 @@ nav{
 #titulo_graf_circular{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 20px;
-    text-align: center;
-    height: 80px;/* 
+    font-size: 18px;
+    text-align:left;
+    height: 80px;
+    position: relative;
+    top: 10px;/* 
     width: 950px;
     left: 500px; */
 }
@@ -1317,11 +1350,15 @@ nav{
     color: white;
     font-size: 15px;
     font-weight: bold;
-    top:0px;
+    position: relative;
+    bottom:80px;
 }
 .instrucciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+    position: relative;
+    bottom:80px;
+    font-size: 13px;
 }
 
 .conexion{
@@ -1343,6 +1380,7 @@ nav{
     color: white;
     font-size: 15px;
     width: 980px;
+    height: 10px;
     bottom: 20px;
 }
 .conexion3{

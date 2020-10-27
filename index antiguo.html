@@ -36,7 +36,7 @@
     -Medicina Legal <br>
   </p>
   
-  <p class="TT" style="color: white;position: relative;bottom: 35px;font-weight: initial;" >¡COLOCA EL MOUSE SOBRE ESTE ICONO!<img  id="INT1" style="position: relative;left: 10px;" src="information.png" width="25px" height="25px"> </p>
+  <p class="TT" id="tete" style="color: white;position: relative;bottom: 25px;font-weight: bold;font-size: 15px;" >¡Para una mejor experencia siempre que veas este icono pon tu mouse sobre el!<img  id="INT1" style="position: relative;left: 10px;" src="information.png" width="25px" height="25px"> </p>
   <p id="int1">Pasa el mouse por encima de los diferentes tipos de violencia intrafamiliar para ver sus definiciones</p>
   </div>
   
@@ -54,16 +54,18 @@
         <div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="#definiciones">Definiciones</a></li>
+              <li><a href="#tete">Definiciones</a></li>
+              <li><a href="#conexion1">Testimonios</a></li>
               <li><a href="#mapa1">En Chile</a></li>
-              <li><a href="#mapa2">Femicidios</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Compara<span class="caret"></span></a>
+              <li class="dropdown"style="width:200px;"><a class="dropdown-toggle" data-toggle="dropdown" href="#subitulo"><span>Violencia en el tiempo</span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#graficos_barras">Según los meses</a></li>
-                  <li><a href="#graficos_circulares">Según los años</a></li>
+                  <li><a href="#graf_años">Por región</a></li>
+                  <li><a href="#2020">En el 2020</a></li>
                 </ul> </li>
+              <li><a href="#texto_2020">Violencia de género</a></li>
+              <li><a href="#estado">El Estado</a></li>
               <li><a href="#cuadro_organizaciones">Organizaciones</a></li>
-              </ul>
+            </ul>
           </div>
           </div>
       </div>
@@ -79,43 +81,42 @@
   <!-- https://www.terapify.com/blog/violencia-intrafamiliar-tipos-causas-y-consecuencias/ -->
   
   <div style="margin:20px;padding-top: 80px;">
-    <p class="conexion1">A pesar de la creciente preocupación por la desigualdad de género, la violencia intrafamiliar o también conocida  como violencia doméstica, se presenta aún frecuentemente en Chile. Te invitamos a escuchar los siguientes testimonios de mujeres que han sufrido violencia intrafamiliar.</p> 
+    <p class="conexion1" id="conexion1">A pesar de la creciente preocupación por la desigualdad de género, la violencia intrafamiliar o también conocida  como violencia doméstica, se presenta aún frecuentemente en Chile. Te invitamos a escuchar los siguientes testimonios de mujeres que han sufrido violencia intrafamiliar.</p> 
     <p class="conexion1" style="text-align: center;font-size: 20px;"> <strong>¡CUIDADO!</strong> Los  siguientes audios pueden herir la sensibilidad de algunas personas.</p>
   <div id="TEST">
-  
-  <div class="testimonio">  
-    <p class="nombre_mujer"><img id="mujer_moreton" src="mujer_moreton.png">María</p>
-    <audio controls class="audio" style="width: 270px;height: 40px;">
+    <div class="testimonio">
+      <p class="nombre_mujer"><img id="mujer_moreton2" src="camila.png" style="height: 300px;width: 200px;position: relative;bottom: 50px;">Camila</p>
+      <audio controls class="audio" style="width: 270px;height: 40px;z-index:2000;position: relative;bottom:100px;">
+        <source src="audios_mp3/camila.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  <div class="testimonio" style="position:relative; bottom: 80px;">  
+    <p class="nombre_mujer"><img id="mujer_moreton1" src="maria.png">María</p>
+    <audio controls class="audio" style="width: 270px;height: 40px;z-index:2000;position: relative;bottom:20px;">
       <source src="audios_mp3/maria_angelica.mp3" type="audio/mp3">
     </audio>
   </div>
   <div class="testimonio">
     <p class="nombre_mujer"><img id="mujer_moreton" src="mujer_moreton.png">Laura</p>
-    <audio controls class="audio" style="width: 270px;height: 40px;">
+    <audio controls class="audio"style="width: 270px;height: 40px; z-index:1000;position:absolute;right: 105px;">
       <source src="audios_mp3/laura.mp3" type="audio/mp3">
     </audio>
   </div>
-  <div class="testimonio">
-    <p class="nombre_mujer"><img id="mujer_moreton" src="mujer_moreton.png">Camila</p>
-    <audio controls class="audio" style="width: 270px;height: 40px;">
-      <source src="audios_mp3/camila.mp3" type="audio/mp3">
-    </audio>
-  </div>
+
   
   </div>
   
   <div style="background-color: #5f367c; height:50px;width: 600px;position: relative;left:280px;top: 30px;">
-    <p class="conexion2" style="font-style: italic;padding-left: 5px;padding: 5px;text-align: center; font-size: 20px;position:relative;left:-190px;top: 5px;">Y como estas mujeres hay muchas más en todo Chile</p>
+    <p class="conexion2" style="font-style: italic;padding-left: 5px;padding: 5px;text-align: center; font-size: 20px;position:relative;left:-190px;top: 0px;">Y como estas mujeres hay muchas más en todo Chile</p>
   </div>
-    <p class="conexion3" style="position: absolute;top: 820px; height: 100px;">A continuación se muestran dos mapas, un mapa muestra la tasa de violencia intrafamiliar, calculada por cada 1000 mujeres, por cada región y el otro mapa muestra la cantidad de casos de violencia intrafamiliar, por cada región.</p>
+    <p class="conexion3" style="position: absolute;top: 905px; height: 100px;padding-top: 15px;">A continuación se muestran dos mapas, un mapa muestra la tasa de violencia intrafamiliar, calculada por cada 1000 mujeres, por cada región y el otro mapa muestra la cantidad de casos de violencia intrafamiliar, por cada región.</p>
   </div>
 <!-- Se utilizo el mapa de la página https://mapsvg.com/maps/chile -->
 <!--------------------------------------------------Mapa de Chile--------------------------------------------------->
 <!-- Se utilizo el mapa de la página https://mapsvg.com/maps/chile -->
-<div class="cuadro_mapa" id="mapa1" style="position: relative;height: 700px;top: 20px;">
+<div class="cuadro_mapa" id="mapa1" style="position: relative;height: 700px;top: 40px;">
 
 <p class="mtitulo" id="TVF"> Tasa<img class="infoboton2" src="information.png"></p>
-  <!-- <p class="infoboton-box2">Definicion de tasa.</p> -->
   <p class="mtitulo" id="TVF2">Frecuencia<img class="infoboton3" src="information.png"></p>
   <p class="infoboton-box3">Número de veces que se repite un proceso periódico por unidad de tiempo. -RAE <br> En este caso es el número de casos de violencia intrafamiliar en el período de un año.</p>
   <p class="mtitulo" id="TRegion"><br>Región</p>
@@ -345,7 +346,7 @@
     
   </div>
   <div id="mapafrecuencia">
-      <svg id="svg1" baseprofile="tiny" fill="#7c7c7c" width="100%"  height="1000" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.2" viewbox="0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+      <svg id="svg1" baseprofile="tiny" fill="#7c7c7c" width="100%"  height="600px" stroke="#ffffff" style="position: relative;top:200px"    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.2" viewbox="0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
       <path class="region" id="fXI" title="Región de Aisén del General Carlos Ibáñez del Campo"
         d="M137.71,367.86l.22-.05.45-.95-.15-.39-.85-.17-.3.31-.37.06-1.39-.66-.74-.89-.66-.69-1.11-.89-.45-.17-.3.09-.41.46-.26.37-.52.06-.65-.07-.34-.08-.26-.23-.06-.45.21-1,.35-.09.84,0,.27-.12.5-.79-1-1.44-.4-.85.1-.71.3-.52.41-.18.29,0,.86.19h.43l1.23-.44,2.79-1.55.75-.65,1.69-1.54.54-1.16.41-1,1.16-3.23.09-1.83-.76.71-1.1.8-1.46-1.12-1.11-1v-.55l-1.29-.6-.89-.29-.44-.05-.57-.12-.38-.23-1.36-1.43L132,342l.14-.61,1-.9,1-.87v-.73l.48-1,1.17-2.37h.36l.63-.15,1.39-.48-.09-.53h0l.92,0,.29.23.86.22,2.69.46.19-.76.46-.68.6-.62.46-.32.66.26.07.81,1.06,1.78.29.13.63.05.41.29.46.58.25.52.11.75,1.94-.21.2-.77,2-1,.47,0,1,.49h0l.69.94,0,.42-.12.36-1.27,2-.45.47-.54,1.52.25.53.08.49,0,2.18-.63.46-.15.39.36.53.69.16,2.12,0h1.12l.9-.15,1.1,0,2.85.58.47.41.73,1.63-.18.65-.32.36-.62.09L160.5,352l.06.49.1.55-.08.58-.72,1-.38.11H159l-.42-.14-.36-.18-.66-.5-.4-.28-.28-.07h-.37l-.52.21-.73.39-.28.1-.34.06-.28-.11-.28-.13-.29-.12-.79-.18-.34.16-.25.43-.38.15-1.53-.19-.31-.14-.29-.13-.35-.2-.39-.1-.39.25-.09.4.21,2.23,1.83.4,1.78.17.92.13,2.19.75.47.47.71,1.49,2.34,3.06.43,1.45-2.34,3.4-1.92.88-.32,0-.29.05-.31.08-.55.22-.53.39-.44,1.9-.15,1.46.54,2.38.41.26.42.14.62.29.29.4.34,1.46-.48.4-.09,0-.29.26-.47.64-.29.48-.28.56-.35.41-.37.17-.43.1-.37,0-.7.33.93,1,.48.18.46.23.29.51.07.49.23,3.19.49,1.21.26,1,.06,2.3-.09.63-.18.38-1.77,1.68-.51.22-.94.07-.3.32-.51,4.42,1.16,1.65.42.49.13.67-.21.94-.21.29-1.86.91-.89,1.54-1.07,1.19-.49.16-.5-.17h-.37l-.51.18-.28.13-.3.19-.21.3-.12.58.24.24.47.32-.29,1.86-.14.44-.19.4-.71,1.13-.34.59-.38.87-1.1,3.14,0,.54.23.41.51.57.39.26.59.15,1.18,1.45.31,2.32.11,3.27-1.86,1.2-.9.36-.92.51-.29.21-.24.34-.12.44.33,1.47.09.47.18,1.35.12,1.67v.95l-.12.48-.37.53L140,437.76l-.39.34-.26.17-.36.21-.41.16-.63.13-.55,0-.27.08-.5.21-.43.3-.33.42-1,1.46-1.37,3.26,0,.45.1.2h0l-.23-.16-4.11-3.54L126,438.56l-4.8-4.18h0l0-.2-.67-.43-.76-.15-.39,0-.5.19-.3.14-.3.13-.51,0-.8-1.06-.36-1.36.63-.91,1.36-1.42.74-.5.71.43,1.43,1,.28-.29.08-2.51-1.23-.4-.36-.47-.24-.24-.31-.06-.79-.12.35-.37,1.22-.29-2-.77-1.87-1.69-1.26-1.46-1.29-1h-.53l-.36-.16-.15-1,.35-.61,1.47-.9,1.55.64.91.72.28.49.19.43.26.78.27,1.75.86.89.42-.12-1.06-2.65-.85-1.53-.08-.4.36-.21,1.44-.06,1.7.07.35.26.43.52.78.31,1.47,0,1.19-.35,2.48,2.23,0,1,.49,1.25.2-.77.65-.68.68.06.32.12.36.23.63,0,.67-.62.22-.28.11-.56,0-.7-.19-.46-.1,1.12-.27.39-.56.44-.28.05-.36-.15-1.19-.78L127.9,420,127,418.6l-.13-1.57H128l.12.66.46.61.25.17.3.14.71.19,2.91.18-.6-.52-1-.3-.48,0-.36.05-.48.12-.53-.09-.61-.45L126,414.38l-.41-1,.08-.54.28-.42.43-.43.4-.59-.26-1.36-.69-.73-.63,1.31.54.39.07.45-.59,3.09-.27.3-.35.23-1.64.72-1.13-.23-.26-.13-.35-.87-.44-.08-.68,0-2.34-.48-1.1-.25-1.19.34-.35.21-.68.11-1-.15-.38-.14-.94-.49-.38-.61,1.9-2.89.61-.41.28-.05,1.2.13.38.13.76.65.32,1.05.49,1.31.56.67.49.25.52.06.33-.14h-.39l-.7-.23-.39-.4-.22-.78.58-1,1.24-.33.73.32h.36l.59-.26-.21-1.65-1,.5-.5.53-1.63.35-.28-.07-2.94-3.08-.15-.38.76-1.38,1.43-1.43.32-.64.19-.45.19-.48,1.74-.28.3.16.13.56,0,.71.66,1.33.11.12-.11-.29-.38-1.22v-.52l.13-.68.18-.33,1-1,1.5-2.34-1.07-1.07-.31-.13-.31,0-.27.14-.41.26-.41-.14-1.52-2.33-.24-1.2,0-.5-1-.43-3.87.39,0,1.14.43-.1.57,0,1.57.47-.17.55-.39.31-.37,0-.88-.1-1.09-.49-3.35-1.6-1.68-.85-.92-1.9,0-.58.18-.47.75-1,1-1-.07-1.35-.31.51-.23.64L107,389.81l-.53.44-1,.62-2.25.64-.57-.12-.55-.05-1,.32-.91.44-.38.31-.76,1.29.29.31.67-.56,1.52-1.05.38,0,.37.24,1.08,3.31-.13.5-.85.61-.75.33-.29.12-.12,0-.14,0-.85-.29-1-1.23-1-1.76-.09-1.38.17-1.83.87-1.3.27-.05.34,0,.45.07.65-.34,1.72-1.53-.09-.7.63-.74.33-.3.93-.5.62.57,0,.25.06-1.2.22-1,1.54-1.7.58-.05,1.25,0,1.87-2.05.46-1.11.91-2.66.47-1.63.21-.29,3-.38,1.23-.3.47.17.27.69.72-.49,1.49-.23.27.21.36.52.73,2.2-.38,2.09-.21.58-.32.6-.3.33-.24.22.32,0,.87-.72.27-1,0-.42-.12-.44.18-.37,1.08,1.06.1.43,0,.58-.19.52L122,381l-.36.4-.7.62-.73.43-.92.43-1.63.49-.42,0-.42-.19-.61-.45-.33-.29-.62-.41,1.17,1.2.31.24.26.17.37,0,1.38-.36,1.1-.32.44-.25.72-.35.33-.07.58,1.85,1.44.95.4.18.13,0,.15-.21-.38-.57-.34-.23-.45-.32-1.13-1.36.46-1.1.32-.3,1-.09,1.81,2.05-.06,1.1-.14.74-.2.59-.24.48-1,1.25-.44.47-1.14,1.75,1.13.87.53,0,.39-.23.21-.29.73-1.62.18-.45.31-1.08,2.38-3,.55-1.67,1.48-2.3-.24-.22-1.34,1.89-.57,1-.24.67-.42.85-.37.46-.47.16,0-.88.1-.41.48-1,.21-.78.17-.85,0-.66-.35-1.19-.29-.88,1.7-3.39,1.42-1.64.26-.28.44-.38.37-.17.28,0h.71l.77.09.44-.09.29-.31-1.9-.64-.54.06-.6.2-.47.4-.39.73-.2.3-1.11,1.07-.29.07.14-1.83.77-4.56,1.63-1.53,1.43-1,1.1-.47.43.41.1.62.43.45.58.51,1.23.91.89.31,1.14.13Zm.07-14.41-.06.08-.68.53-.65.34-.93,1-.15.31-.15.25-.13.14-.93.74-.85.4-.39.14-.5.07-.22,0-.21-.13-1.47-1.71-.11-.21,0-.23.1-.18,1.37-.5.24.1.15.11.22.25.59-.14.13-.1-.38-.34-.89-.39-.58.36-.16.19-.14.12h-.17l-.21-.12-.15-.19-.45-.93-.18-.46-.26-1.24.55-.82.12-.15.42-.09.15,0,1.36-.25.17-.9.06-.76,0-.28.05-.24.28-.76.14-.2.18-.07,1.76-.59,1.24-.3.16.05,1.65,1.34,1.1.39.27.22.6,1,.1.23,0,.22-1.07,1.57-.13.14-.16.11-.26.06-.88-.09-.15-.12-.19-.21-.73-.28,0,.27.12.2.84.58.42.13.56.12.12.3-.2.42-.21.34-.16.13Zm-32.35,80-.17.12-.33.1-.62-1.51-.21-1-.3-2,0-.33.3-.88-1.41-.84-.88.46-.21.06-.33.08H101l-.19-.05-.26-.17-.1-.19,0-.24.07-.25.27-.23.26-.17.39-.17.49,0,.35-.05.22-.07.27-.14.23-.21.23-.35.17-.33-.19-.06-.64.39-1.84.22-.15-.24-.51-4.52.09-.23.57-.73.4-.32,2-.56.25.05.16.19.85,2.68.1.36.1,1.22.5,1.6.33.91.4.46.5.9.73,2.06.15,1.81-.09.39-.12.18-1.58,1.63Zm8-.15-1.7-1.22h-.24l-.24.11-.21.07h-.26l-1.62-.34-.9-.52-.2-.16-.08-.21-.22-1.53.06-.39.12-.25.12-.17,1-1.11.22-.13.91-.11.17,0,.11.28.3.48,0,.29.12.23.62.52.66-.82,0-.23-.18-.25-.13-.09-.4-.09-.48-.9-.11-.25-.17-.78v-.26l0-.29.6-3.08.13-.32.1-.19.18-.17.17.08.26.38.1.18.05.34v.39l.08.81.17,1.47L114,427.4l-.29,1v1.21l.07.93.09.37.68.92.2.05.13-.16v-.21l-.08-.2v-.25l.17-.08.15.07.17.13.12.15,0,.31-.11.58-.08.37-.12.18-.16.14-.71.44-.25.1-.3,0-.22-.14Zm-5.59-5.19h-.2l-.18-.09-2-4.39-.87-2.64,0-.61.46,0,.9.19,1.62.4.38.21,1.16.94,1.57.4.15.2,0,.34,0,.43-.47,3-.11.18-.21.08-.39,0-.72.49-.33.24-.39.32-.44.38Zm18-64-.85-.27-.52-.62-.59,0-.78.21h-.24l-.54,0-.18-.09-.16-.12-.15-.25-1.25-1.46-.42.24-.94.21-.23-.05-.13-.13-.09-.49-.08-.62v-.2l.1-.4.2-.27.48-.48.19-.16.26-.06.32,0,.14.08.25.09.64-.06,1.08-.19.3-.09.52-.33.17-.13.21-.05.3.05.26.09.14.07.85.66.14.14.13.14.1.16.56.91.21.56,0,.24v.25l0,.54-.39,1.91Zm-8.14,54.42-.52-.27-1.71-.71-.26-.23v-.24l1.12-1.24.15-.15.25-.16,1.32-.7.27-.07,3.12,1.05,1.67.68.37.05.21-.07.42-.36.17-.11h.15l.18.12.22.27.06.22-.08.29-.26.78-.26.17-.46.16-.19,0-.52,0h-1.49l-.27,0-.33-.13-.19-.1-.3-.06-.19,0-2.24.64-.4.15Zm.76-63.76-.26,0-.38-.14-.25-.15-.15-.12-.2-.2-.31-.41-.54-1.19v-.24l0-.83.16-.17,1.9-.49.21,0h1.22l2.22.12.47.16.18.09.33.21.14.13.18.21.37.57.07.29-2,.54-2.35,1-.34.19-.73.46Zm-11.23,25.44-.16-.17-.1-.24-.16-.62.08-.22.16-.11,1.64-.46.19.09-.1-.43-.36-.09-.38.14-.5,0-.23-.06-.13-.28-.5-1.78.07-.2.23-.18.3-.09,1.27.5.19.1.23.19.86-.49,1.18-1.08.72-.35.32,0,.15.33v.32l-.06.31-.64,2.76-.09.2-.11.18-.37.46-1.48,1.44-.23.12-1,.07-.33,0-.5-.16-.18-.15Zm-7.4,53,.36-.5.43.09.39-.12.21-.05.37-.19.16-.13L102,432l.08-.29-.13-.12-.25.24-.23.21-.19.09-.29,0h-.2l-1-.1-.65-.34-.27-.62.26-2.24.41-.74.27-.07,3-.28.67.14.08.3.28,3-.07.22-.65.59-.31.26-.89.69-.42.3-.18.09-.22.07-.42.05-.49,0-.28-.1-.1-.1Zm15.91-59.33-.21-.08-.16-.26-.14-.37,0-.27.11-.23.33-.37.24-.35v-.77l-.14-.83-.13-.63v-.31l0-.27.06-.37.06-.22.15-.43.18-.38.23-.36.31-.12,1.28.62.23.18.15.19.28.57.14.4.32,1,.17.81-.27.73-.11.17-2.15,1.67-.17.11-.77.14Zm-6,46.43h-.19l-.76-.24-.85-.38-.18-.11-.11-.24.21-.41-.29-.25-.37-.08-.37,0-.27.16-.31.38-.24.36-.2.07-.34.07-.48.05-.3-.06-.19-.18.8-1.17.39-.32.17-.12.94-.28.44-.11h.28l1.24-.85,1-1.36.81-.41.21.15.1.7,0,.24,0,.77,0,2.91-.73.56-.14.08-.24,0Zm17.14-46.79-.13,0-.24-.15-1.44-1.63-.07-2.1v-.31l0-.32.08-.22.15-.27.75-1.11.15-.12.28-.05.24,0,1,.33.14.23,0,.69-.46,3.78-.32,1-.14.21Zm-8.67-14.39h-.14l-1-.27-.07-.18.2-.49,2.1-2,.2-.15.25-.08H120l2.51.65.17.17.53.67.1.24-.16.17-.5.31-.29.09-.86.25-.23,0H120.2l-.71-.06-.25.08-.17.08-.82.54Zm7.38-5.61h-.19l-.87-1.23,0-1.85.06-.31.2-.18,1.35-.33.23,0,.24.11.22.22.44,1.12.53,1.62,0,.2-.16.11-1.51.47-.46,0ZM122.19,338l-.37-.43-1.38-.42-.65-.25-.1-.16.28-1,.18-.19.22-.1.84.1.22.06,1.84-.27.77-.68,1,1.1.28.87.08.43-1.25.1-.19-.17-.23-.1-.07-.19.2-.17.14-.18-.2-.14-.38-.05-.81.2-.07.42.16.2,0,.21.34.2-.44.55-.23.08-.21,0Zm-.1,27.56-.19,0-1.66-.63-.14-.19-.32-1.24.32-.41.85-.38h.21l.2.08.12.15.18.54.12.14.17.11.23.06.24,0,.52,0h.24l.5-.1.39-.06.37.06.18.1.14.12.2.35.12.39,0,.37-.14.3-.14.06h-1l-1.2,0-.52.12ZM114.8,426l-.13-.09-.86-1.86,0-.23,0-.37v-.52l0-.78.48-.7h.23l.28.23.44.43,1.5,1.52.33.68-.56.83-.16.13-1.5.73Zm10.45-43.42-.45-.42-.13-.15L123,379.74v-.34l.19-.53.16-.19.19-.07.66,0,.25,0,1.24.55.59.45.2.22.08.34-.1.37-.75,1.49-.2.37-.16.11-.11,0Zm-8.73-32.73-1.54-.37-.24-.22-.08-.19-.18-.65.09-.29.3-.33.2-.13,2.65-.81.7.23.48.79.15.3v.21l-.33.12-1.23.31-.94.2-.18.08.16.75Zm5.76,23h-.12l-.74-.14-.17-.17-.43-1.1-.27-.72v-.41l.69-.87.46-.28.23,0,.66.35.65.65.28.59V371l-.12.6-.27.76-.86.44ZM99.71,435.51l-.13,0-.16-.08-.22-.24-.07-.3.1-1.28.33,0,.63.28.62.16.27,0,.23,0,.16-.13.82-.76,1.09-1,.65.46.2.57.06.22,0,.31-.27.41-.23.19-2.4.89-1.7.33ZM120.16,370l-.06-.13,0-.23.06-.52.07-.31.13-.15.2-.16v-.42l.12-.26.19-.25.13-.26.08-.21.17-.18.2,0,.2.13.18.1.26,0h.31l.15.05.16.12.13.15.38.18.18.16.19.1.2-.05.35-.27.23-.09.21.16.06.31-.09.4-.15.34-.1.26-.24.41-.08.39-.19,0-.28-.19h-.14l-.21-.07-.24-.36-.29-.08-.27,0-.45-.2-.46-.1-.14,0-.23.19-.31.09-.22.22-.14.38-.13.23-.15.07Zm-.43,32-.18-.12-.62-.79v-.55l.45-1.31.13-.23.15-.13.15,0,1.81.09.79.62-1.13,1.61-.32.33-.15.13-.18.1-.69.24Zm4.52-44.22-.52-.52-.44-.51-.15-.25-.08-.18-.09-1.44.08-.3.22-.26.2-.12.21-.05.3,0,.28.12.14.2.88,2.25.07.6-.08.26-.1.19-.21.18-.28.05-.17,0-.19-.09Zm-5.94,70.88-.2-.29-.14-.14-.26-.18-1-.66-.29-.15-.71-.28-.19-.16-.21-.3-.06-.21,1.8-1.37.23-.11.19,0,.3.07.2.24v.34l-.2.6v.25l.17.32.4.62.26.3.3.22.19.21-.07.28-.15.14-.39.24-.18,0Zm-6-55.64,0-.22v-.37l0-.25.25-1,.09-.2.1-.18.18-.24.15-.11.17-.1.78-.37h.34l.15.12.06.21-.18,1.88-.42,1.05-.19.16-.17.11-.27.05-.18,0-.72-.17-.13-.13V373Zm11,5.12-.16-.06-.13-.21-.21-.63,0-.3.13-.32.08-.18.38-.61.22-.26,2-1.21.19,0,.18.3.07.2.07.32,0,1-.21-.14-.13-.15-.22,0-.59.06-.27.12-.25.93-.45.87-.76.27Zm-17.7,37.45.06-.35,0-.23-.13-.16-.59-.22-.26,0-.28,0-.24-.07-.17-.24.53-.57,1.73-1,.24.12.42.57.18.38.25.82-.07.31-.2.35-.13.16-.19.17-.4.23-.95.18.24-.41Zm16.1-38.86-.64-1.53-.33-.59-.17-.5.16-.35.12-.15.5-.43.2-.05,1,.34,0,.67,0,1.47-.07.29-.2.51-.43.3-.09,0Zm-5-20.86-.26,0-.85-.54-.86-1.36,0-.28.14-.24.16-.1.83-.28.27.13,1.58,2.26v.21l-.87.22Zm0,10.54-1.31-.78-.14-.11-.21-.21-.25-.35-.06-.2.1-.28.18-.18.28-.11.23,0h.87l.27.09.19.16.23.31.17.3.52,1.32-.14.15-.24.1-.27.06-.35-.11-.07-.12ZM121.47,350l-.34-.08-.44-.13-.27-.14-.13-.14-.07-.25.07-1.38,1.45.21.36.06.28.13.15.12.14.18.09.24.08.3,0,.35-.06.29-.2.14-1.14.1Zm12.21-10.22-.41-.09-1.07-.53-.17-.27-.08-.37,0-.31.24-.51.17-.23.92-.5.27-.05.18,0,.15.12.1.14,0,.34-.2,2-.18.19ZM122,345.58l-.24,0-.17-.08-.54-.47-.23-.32-.45-1.67.85-.94.2.05.87,1.05.49.62-.8.29,0,.31v.24l.06.94Zm4.87-3.76-1-1.76-.4-.94v-.32l.08-.3.19-.35.11-.15h.32l1,1.36.3,1.35-.07.5-.39.49-.14.11Zm-10.8,88-.29-.69-.69-1.27-.07-.2,0-.23.25-.26h.22l.36.16,1,.6.69.48.24.19.12.24,0,.23-.19.18-.27.14-.75.38-.35.15-.18,0-.09-.08Zm1.36-65.4-.72-.58-.22-.2-.12-.14-.11-.22,0-.3.2-1,.17-.34.36,0,.19.1,1.12,1.05-.42,1.73-.16.12-.17,0-.14-.11Zm-1.81-11.72-.53,0h-1.73l-.63-.32v-.25l.08-.2.55-.59.21-.12.27-.05h.2l.35.07,1,.23.23.12.1.94Zm0,49-.34-.7v-.72l.11-.18.84-.46.21-.07.46-.06.42,0,.31.08.11.15,0,.3-.12.4-.12.17L116,401.89l-.23.14-.11-.23,0-.13ZM107,357.14h-.14l-.2-.13-.46-1.36-.06-.2,0-.21,0-.26.15-.26.3-.42.32-.09.2.14.76,1.26v.9l-.65.6-.23,0Zm15.53-9.58-1.45-.77-.2-.23-.29-1.09.25-.1,2.19.69.07,1.6-.09.18-.27-.07-.21-.21Zm-5,2.85-.12,0-.16-.14-.2-.26-.11-.22v-.23l.09-.19,1-.46,1.38-.11.74,1-.7.2-1.89.4Zm3.6,78.7h-.12l-.29-.19-1.18-.81-.84-.85-.13-.34.09-.29.28-.11h.4l.31.08,1.34.94.17.13.14.21.05.22-.22,1Zm5.24-50.2h-.14l-1.34-.38-.34-.27-.11-.25,0-.28.66-1.3.2-.15.15,0,.62.6.4,2-.12.12Zm0-23.53-.49-.3-.26-.21-.11-.79.1-.28,1.56-.4h.2l.18.16,0,.21-.21,1.45-.25.26-.26.06-.35-.06-.15-.1ZM124,343l-1.06-.21-.48-.14-.2-.15-.12-.14-.09-.17-.06-.24.52-.54.36-.29.3-.06.15.06.59.42.62.78-.1.36-.09.18-.15.08L124,343Zm-2.44,12.79-.35,0-1.43-.6-.2-.22.25-.18.78-.12.42-.09.2-.06.34-.19.25-.16.25-.07.56.13.12.24-.09.77-.15.18-.17.1-.5.23-.28.06Zm-13.25,58.69h-.12l-.55-.46-.11-.17-.33-1.2.14-.13h.32l1.14.24.13.08.26.31.31.53.08.24-.16.29-.55.21-.56.08Zm2.93-62-.14-.08-.28-.45-.06-.2-.07-.44V351l0-.76.1-.25.12-.15h.21l.74.45.13.21.05.27,0,.26-.2,1.18-.32.22-.17.09Zm12,14.62-1-.3-.37-.12-.07-.19.07-.26.2-.15.62-.22.29,0,1.41,0,.18.09,0,.29,0,.36-1,.49-.16,0Zm.9-21.41-1.38-.26-.16-.2-.07-.66,2.14-.2.23.06.11.72,0,.29-.2.14-.2.05-.33.05Zm11.3-11.63.6-.42.7-.14.52.56.36.14.23,0h0l-.21.19-.87.08-1.33-.43Z" transform="translate(-97.81 94.2)"  stroke="#000" stroke-miterlimit="10" stroke-width="0.75"/>
         <path class="region" id="fXII" title="Región de Magallanes y Antártica Chilena"
@@ -380,7 +381,7 @@
         d="M139,193.83l-.2.24-.28,2.5-.29,3.5-.52,1.36v.2l.18.65h.64l.09.68-.27.37.18.54.28,1,.41-.18.32.32.32.64.77.13.78.83.18.68-.09.41.23.92.5.27-.27.46.18.41-1.23-.09-.19.59,2,.19L143,210h.37l.23.46.73,0,.27-.32.78,1.19.6.41h.55l.36.28.32.14.14.4-.55.6-.46.23-.14.59v1.14l.51-.18,1,.23.55-.36.68.18h.28l.18-.32h.23l.59.36h.41l.6,0,.55-.23.32-.32.22-.55.37-.18.5-.05.6.23.36.14.37.27.41-.27h.5l.46-.14.32.14.05-.6.18-.36V212l.41-.14.37.33.45.36.09.37.46.27.28.05.22-.32.37.13.41.14.37.37.55.18.54-.14.37-.14.55.37.35-.08v-.08l-.5-2.41-.53-2.25.69-1.78,1.14-3.36.28-1.08.26-.14-.09,0-.41-.48-.15-.6-.1-.51-.47-.24-.33,0-.26.2-1.1,1.4-.11.44,0,.37-.4.45-.56-.07-1.38-.77-.28-.28-1.5-1.23-1.16-.35-.87-.34-.5-.32-.35-.34-.17-.42-.35-.77-.91-.14-.33.1-.35.14-.32,0-.75-.17-.24-.22-.1-.32-.18-.43-1.08-1.13-.1.52,0,.43-1,1.13-1.71-.05-.35-.12-2.66-1.39-2-1.77-.09-.6-.22-.23-1.55-.69Z" transform="translate(-97.81 94.2)"  stroke="#000" stroke-miterlimit="10" stroke-width="0.75"/>
     </svg>
     <div>
-      <img id="leyenda_frecuencia" style="width: 260px; height: 120px;position: relative;bottom: 680px;left: 150px;"  src="leyendas/leyenda_frecuencia.png">
+      <img id="leyenda_frecuencia" style="width: 260px; height: 120px;position: relative;bottom:290px;left: 150px;"  src="leyendas/leyenda_frecuencia.png">
     </div>
     <div id="FRanking2016">
       <p style="font-size: 13px;">Ranking de las regiones según frecuencia.</p>
@@ -397,9 +398,12 @@
       <p class="F16" id="F16fXVI">11. Región XVI Ñuble</p>
       <p class="F16" id="F16fXIV">12. Región XIV Los Ríos</p>
       <p class="F16" id="F16fIII">13. Región III Atacama</p> 
-      <p class="F16" id="F16fXV">14. Región Arica y Parinacota</>
+      <p class="F16" id="F16fXV">14. Región Arica y Parinacota</p>
       <p class="F16" id="F16fXI">15. Región XI Aysén</p>
       <p class="F16" id="F16fXII">16. Región XII Magallanes</p>
+      <button id="enlace" style="color: white;text-decoration: none;position: absolute; left: 12px;background-color: #9b3269;border-color: #9b3269;line-height: 12px;height: 60px;">
+        <a href="#subtitulo" style="color:white;" >Haz click aqui para ver como la violencia intrafamiliar ha evolucionado con el tiempo en cada región </a> </button>
+    
     </div>
     <div id="FRanking2017">
       <p style="font-size: 13px;">Ranking de las regiones según frecuencia.</p>
@@ -419,6 +423,9 @@
       <p class="F17" id="F17fXV">14. Región XV Arica y Parinacota</p>
       <p class="F17" id="F17fXII">15. Región XII Magallanes</p>
       <p class="F17" id="F17fXI">16. Región XI Aysén</p>
+      <button id="enlace" style="color: white;text-decoration: none;position: absolute; left: 12px;background-color: #9b3269;border-color: #9b3269;line-height: 12px;height: 60px;">
+        <a href="#subtitulo" style="color:white;" >Haz click aqui para ver como la violencia intrafamiliar ha evolucionado con el tiempo en cada región </a> </button>
+    
     </div>
     <div id="FRanking2018">
       <p style="font-size: 13px;">Ranking de las regiones según frecuencia.</p>
@@ -440,6 +447,9 @@
       <p class="F18" id="F18fXV">14. Región XV Arica y Parinacota</p>
       <p class="F18" id="F18fXII">15. Región XII Magallanes</p>
       <p class="F18" id="F18fXI">16. Región Aysén</p>
+      <button id="enlace" style="color: white;text-decoration: none;position: absolute; left: 12px;background-color: #9b3269;border-color: #9b3269;line-height: 12px;height: 60px;">
+        <a href="#subtitulo" style="color:white;" >Haz click aqui para ver como la violencia intrafamiliar ha evolucionado con el tiempo en cada región </a> </button>
+    
     </div>
     <div id="FRanking2019">
       <p style="font-size: 13px;">Ranking de las regiones según frecuencia.</p>
@@ -461,11 +471,10 @@
       <p class="F19" id="F19fXV">14. Región XV Arica y Parinacota</p>
       <p class="F19" id="F19fXII">15. Región XII Magallanes</p>
       <p class="F19" id="F19fXI">16. Región Aysén</p>
-</div>
-  <div id="enlace" style="color: white;position: absolute; left: 100px;bottom: 300px;">
-     Haz click aqui para ver como la violencia intrafamiliar ha evolucionado con el tiempo en cada región </div>
+  <button id="enlace" style="color: white;text-decoration: none;position: absolute; left: 12px;background-color: #9b3269;border-color: #9b3269;line-height: 12px;height: 60px;">
+     <a href="#subtitulo" style="color:white;" >Haz click aqui para ver como la violencia intrafamiliar ha evolucionado con el tiempo en cada región </a> </button>
   </div>
-
+</div>
 </div>
 <!--Este mapa fue sacado de https://mapsvg.com/maps/chile-->
 <!------------------------------------------------------------------------------------------------------------------>
@@ -476,7 +485,7 @@
     <br><br>Por lo mismo, es importante ver como la violencia intrafamiliar ha cambiado a lo largo de los últimos años.</p>
 </div>
 <div>
-  <p class="subtitulo">¿Qué ha pasado los últimos años? <img class="infoboton4" src="information.png"><br></p><br>
+  <p id="subtitulo">¿Qué ha pasado los últimos años? <img class="infoboton4" src="information.png"><br></p><br>
   <p class="infoboton-box4">Haz click sobre el nombre de alguna región para ver el cambio en el número de casos a través de los años 2016 y 2020</p>
 </div>
 
@@ -719,7 +728,7 @@
 </div>
 
 
-<div>
+<div id="2020">
   <p class="subtitulo"><br>¿Y qué está pasando en el año 2020?</p>
 </div>
 <div>
@@ -747,7 +756,7 @@
   <p class="conexion">Las restricciones impuestas por la pandemia limitan el derecho a la libertad de tránsito, lo que puede explicar que las denuncias hayan disminuido con respecto al año pasado. Sin embargo, esto <strong>no significa que los casos hayan disminuido</strong> (CIPER).</p>
 </div>
 
-<div id="texto_2020"> 
+<div id="texto_2020" style="position:relatives;top:-1px;left: 50px;background-color: #5f367c;height: 70px;font-size: 18px;padding: 5px ;"> 
   Pero, la violencia intrafamiliar a la mujer no es la única expresión de violencia de género, existen otros tipos como abusos sexuales, violaciones y femicidios.
 </div>
 
@@ -779,7 +788,7 @@
       </ul>
     </div>
 
-    <div>
+  <div style="position: relative;bottom: 80px;font-size: 13px;">
       <p class="terminos1" style="font-weight: bold;">Términos que encontraras:</p>
       <ul>
       <li >VIF: Violencia intrafamiliar <br><br></li>
@@ -795,7 +804,7 @@
 
 </div>
 
-<div>
+<div id="estado">
   <p class="subtitulo">¿Y cómo el Estado protege a las víctimas?</p>
 </div>
 
@@ -813,7 +822,7 @@
 </div>
 
 <div id="marcela">  
-  <p class="nombre_mujer"><img id="mujer_moreton" src="mujer_moreton.png">Marcela</p>
+  <p class="nombre_mujer"><img id="mujer6" src="marcela.png" style="height:300px;width:220px">Marcela</p>
   <audio controls class="audio"style="width: 270px;height: 40px;">
     <source src="audios_mp3/marcela.mp3" type="audio/mp3">
   </audio>

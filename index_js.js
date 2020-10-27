@@ -1022,6 +1022,5 @@ $("#INT1").mouseleave(function(){
         $("#XII2019").hide();
         $("#XIV2019").hide();
         $("#XVI2019").hide();
-    })
-     
+    });
 }) 
