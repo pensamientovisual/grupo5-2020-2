@@ -85,10 +85,17 @@ $(document).ready(function(){
     $("#TRegion").hide();
  
     $("#mensaje").hide();
+    $("#int1").hide();
   var año1= false;
   var año2= false;
   var año3= false;
   var año4= false;
+  $("#INT1").mouseenter(function(){
+    $("#int1").show();
+});
+$("INT1").mouseleave(function(){
+    $("#int1").hide();
+    });
   $(".infoboton").mouseenter(function(){
       $(".infoboton-box").show();
   });
@@ -130,7 +137,7 @@ $(document).ready(function(){
        $(".infoboton2").hide();
        $("#TVF").hide();
        $("#TRegion").show();
-       $("#TRegion").text(nombreregion).css("position","relative").css("top","40px");
+       $("#TRegion").text(nombreregion).css("position","relative").css("top","41px");
        $(this).fadeTo("fast", 0.5);
   });
 

@@ -1,12 +1,35 @@
 body{
-    background-image: url("background_mujer.png");
     background-repeat: no-repeat;
     background-color: #654073;
-    width: 1366px;
-    height: 1768px;
     margin: 50px;
     padding: 20px;
 }
+#def_int{
+    position: absolute;
+    top: 265px;
+    left: 50px;
+    width: 615px;
+    height: 30px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #654073;
+    z-index: 10;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+#indicaciones{
+    color: white;
+}
+#mujer_moreton{
+    width: 260px;
+    height: 260px;
+    position: relative;
+    left: 80px;
+    top: 10px;
+
+    float: right;
+    }
 
 nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -25,25 +48,27 @@ nav{
     left: -100px;
 }
 
-#QueEs{
+.QueEs{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    background-color: #977fa3;
-    width: 1000px;
-    height: 100px;
-    margin: auto;
-    padding: 10px;
+    height: 120px;
+    margin-right: 200px;
     position: relative;
-    top: 50px;
-    left: 000px;
+    top: 20px;
+    left: 80px;
+    font-size: 15px;
+
 }
 
-#cuadro_organizaciones{
+
+#cuadro_organzanizaciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: left;
     font-style: normal;
+    position: relative;
+    top: 1000px;
 }
 
 .organizacion{
@@ -53,14 +78,35 @@ nav{
     margin: 20px;
     padding: 10px;
     position: relative;
-    top: 200px;
+    top: 1000px;
     left: 75px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.text_org{
+    width: 700px;
+}
+
+#img_fundacion_honra{
+    position: relative;
+    left: 750px;
+    top: -175px;
+}
+
+#img_fundacion_antonia{
+    position: relative;
+    left: 750px;
+    top: -125px;
+}
+
+#img_corporacion_miles{
+    position: relative;
+    left: 750px;
+    top: -150px;
+}
+
 .link_org:link{
-    text-decoration: none;
-        color: white;
+    color:white;
 }
 
 .link_org:visited{
@@ -68,39 +114,63 @@ nav{
     color: white;
 }
 
-
 #definiciones{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    width: 400px;
-    height: 300px;
-    margin: 30px;
-    padding: 10px;
     position: relative;
-    top: 30px;
+    margin: 0mm;
+    width: 1200px;
+    background-color:  #977fa3;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;  
+    text-align: center;
+    font-size: 20px;
 }
 
-
 .texto_def{
-    background-color: #977fa3;
-    width: 500px;
-    height: 55px;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size:12px;
     position: relative;
-    top: -80px;
-    left: 400px;
+    margin: 0px;
+    text-align: center;
 }
 
-.subtitulo{
+#VF2{
+    width: 300px;
+    position: relative;
+    left: 40px;
+}
+
+#Fem2{
+    position: relative;
+    width: 300px;
+    left: 320px;
+}
+
+#D32{
+    position: relative;
+    width: 300px;
+    left: 580px;
+}
+
+#D42{
+    position: relative;
+    width: 300px;
+    left: 860px;
+}
+
+.def{
+    text-align: center;
+    margin-top: 0mm;
+    font-size: 20px;
+}
+
+#subtitulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     position: relative;
-    top: 200px;
     left: 100px;
 }
 
@@ -108,36 +178,103 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     position: relative;
-    top: 200px;
+    top: 1000px;
     left: 100px;
 }
-
-
-#cuadro_mapa{
-    background-color: #977fa3;
-    width: 1366px;
-}
-
-
-/* ----------------------MAPA---------------------- */
 .region{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#mtitulo{
+.mtitulo{
     position: relative;
-    top: 20px;
     text-align: center;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     font-weight: bold;
-    color: white;
+    color: black;
+    top: 60px;
+    justify-content: center;
 }
 
 .botones{
-    position: absolute;
-    left:250px;
-    top: 843px;
+    position: relative;
+    top: 75px;
+    left:59px;
+    color: black;
+}
+.fotones{
+    position: relative;
+    top: 75px;
+    left:59px;
+    color: black;
+}
+#fI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fII{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#fIII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fIV{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#fV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fVI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fVII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fVIII{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fIX{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fX{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fXI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fXII{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#fRM{
+    fill:#D0D3D4;
+    fill-opacity:1
+}
+#fXIV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fXV{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fXI{
+    fill: #D0D3D4;
+    fill-opacity:1
+}
+#fXVI{
+    fill:#D0D3D4;
+    fill-opacity:1
 }
 #I{
     fill: #D0D3D4;
@@ -209,132 +346,92 @@ nav{
 }
 .mapdiv{
     text-align: center;
+
 }
 #XV{
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
   }
-
-.I1{
-    position: absolute;
-    top: 800px;
-    left:910px;
-}
-.I2{
-    position: absolute;
-    top: 800px;
-    left:960px;
-}
-.I3{
-    position: absolute;
-    top: 800px;
-    left:1010px;
-}
-.I4{
-    position: absolute;
-    top: 800px;
-    left:1060px;
-}
-.I5{
-    position: absolute;
-    top: 800px;
-    left:1110px;
-}
-.I6{
-    position: absolute;
-    top: 800px;
-    left:1160px;
-}
-.I7{
-    position: absolute;
-    top: 800px;
-    left:1210px;
-}
-.click1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 900px;
-    left:930px;
-    width: 300px;
-    ;
-}
-.click2{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 945px;
-    left:940px;
-    width: 350px;
-    text-align: left;
-}
-.click3{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 900px;
-    left:930px;
-    width: 300px;
-}
-.click4{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 945px;
-    left:940px;
-    width: 350px;
-    text-align: left;
-}
-.click5{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 900px;
-    left:930px;
-    width: 300px;
-}
-.click6{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 945px;
-    left:940px;
-    width: 350px;
-    text-align: left;
-}
-.click7{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 900px;
-    left:930px;
-    width: 300px;
-}
-.click8{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 945px;
-    left:940px;
-    width: 350px;
-    text-align: left;
-}
-.click9{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 900px;
-    left:930px;
-    width: 300px;
-}
-.click10{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: absolute;
-    top: 945px;
-    left:940px;
-    width: 350px;
-    text-align: left;
-}
-#intrucciones{
+  .intrucciones{
     position: relative;
-    left:180px;
+    top: 65px;
+    left:58px;
     background-color: #977fa3;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 12px;
-    margin-right: 950px;
+    margin-right: 750px;
     padding: 5px;
     border-radius: 0%;
     color: white;
+}
+
+.cuadro_mapa{
+    background-color:#F5EEF8;
+    width: 1200px;
+    height: 1000px;
+}
+
+.A2016{
+    position:absolute;
+    left: 850px;
+    top: 500px;
+    height: 75px;
+
+}
+#XV2016{
+    top: 500px;
+}
+#I2016{
+    top: 580px;
+}
+#II2016{
+    top: 660px;
+}
+#III2016{
+    top: 740px;
+}
+#IV2016{
+    top: 820px;
+}
+#RM2016{
+    top: 900px;
+}
+#VII2016{
+    top: 980px;
+}
+#VIII2016{
+    top: 1060px;
+}
+#XIV2016{
+    top: 1140px;
+}
+#XI2016{
+    top: 1220px;
+}
+/* Parte izquierda */
+#V2016{
+    left: 175px;
+    top: 825px;
+}
+
+#VI2016{
+    left: 175px;
+    top: 905px;
+}
+#XVI2016{
+    left: 175px;
+    top: 985px;
+}
+#IX2016{
+    left: 175px;
+    top: 1065px;
+}
+#X2016{
+    left: 175px;
+    top: 1145px;
+}
+#XII2016{
+    left: 175px;
+    top: 1225px;
 }

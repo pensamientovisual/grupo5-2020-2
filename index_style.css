@@ -4,44 +4,71 @@ body{
     background-color: #0f0f0f;
     margin: 50px;
     padding: 20px;
+    display: block;
 }
 
-#mujer_moreton{
-    width: 260px;
-    height: 260px;
+ #mujer_moreton{
+    width: 200px;
+    height: 200px;
     position: relative;
-    left: 80px;
-    top: 10px;
-    float: right;
-    }
+ }
 
 nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
 
-.titulo{
+#TITULO{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
     text-align: center;
-    color: white;
+    font-size: 30px;
+    color: #7a5496;
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 10px;
     position: relative;
     left: -100px;
+    font-weight: bold;
 }
 
+#int1{
+    width: 400px;
+    height: 40px;
+    background-color: #D0D3D4;
+    position: relative;
+    left: 350px;
+    padding: 5px;
+    line-height: 15px;
+    border-radius: 5px;
+    z-index: 200;
+    bottom: 80px;
+
+}
+
+#int1::after{
+    content: "";
+    display: block;
+    border-right: 12px solid #D0D3D4;
+    border-bottom: 12px solid transparent;
+    border-top: 12px solid transparent;
+    position: absolute;
+    bottom: 10px;
+    left: -11px;
+} 
 .QueEs{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: center;
-    height: 120px;
-    margin-right: 200px;
+    justify-content: center;
+    height: 150px;
+    font-size: 14px;
+    width: 700px;
+    font-style: italic;
+    padding: 50px 50px;
     position: relative;
-    top: 20;
-    left: 80px;
-    font-size: 15px;
+    bottom: 45px;
+    left: 140px;
 
 }
 
@@ -51,7 +78,7 @@ nav{
     text-align: left;
     font-style: normal;
     position: relative;
-    top: 1000px;
+
 }
 
 .organizacion{
@@ -61,7 +88,6 @@ nav{
     margin: 20px;
     padding: 10px;
     position: relative;
-    top: 1000px;
     left: 75px;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -101,7 +127,7 @@ nav{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     grid-template-columns: 250px 250px 250px 250px;
-    justify-content: center;  
+    justify-content: center;
     text-align: center;
     padding-top: 15px;
     width: 1000px;
@@ -109,9 +135,15 @@ nav{
     background-color:  #3c2a44;
     display: grid;
     font-size: 20px;
-    position: relative;
-  
-
+    position: absolute;
+}
+#TEST{
+    grid-template-columns: 330px 330px 330px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    display: grid;
+    width: 990px;
 }
 .VF::before,
 .VF::after{
@@ -165,7 +197,7 @@ nav{
     transform-origin: bottom center;
 }
 .VEm::before{
-    --translate-y: calc(80% - var(--arrow_size));
+    --translate-y: calc(68% - var(--arrow_size));
     content: attr(data-tooltip1);
     color: white;
     padding:.5rem;
@@ -245,7 +277,7 @@ nav{
     transform-origin: bottom center;
 }
 .VEc::before{
-    --translate-y: calc(97% - var(--arrow_size));
+    --translate-y: calc(80% - var(--arrow_size));
     content: attr(data-tooltip3);
     color: white;
     padding:.5rem;
@@ -271,13 +303,13 @@ nav{
 #definiciones_2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    justify-content: center;  
+    justify-content: center;
     text-align: center;
     padding-top: 15px;
     width: 500px;
     height: 100px;
     font-size: 15px;
-    position: relative; 
+    position: relative;
 }
 
 .As::before,
@@ -396,13 +428,7 @@ nav{
     border-bottom-color:var(--color);
     transform-origin: top center;
 }
-.subtitulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    position: relative;
-    font-size: 20px;
 
-}
 
 .parr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -417,7 +443,7 @@ nav{
     height: 25px;
     left: 5px;
 
-} 
+}
 .infoboton2{
     position: relative;
     width: 25px;
@@ -425,7 +451,7 @@ nav{
     left: 5px;
     z-index: 100;
 
-} 
+}
 .infoboton3{
     position: relative;
     width: 25px;
@@ -433,7 +459,17 @@ nav{
     left: 5px;
     z-index: 100;
 
-} 
+}
+
+.infoboton4{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    left: 5px;
+    z-index: 100;
+
+}
+
 .infoboton:hover .infoboton-box{
     display: inline-block;
 
@@ -443,6 +479,11 @@ nav{
 
 }
 .infoboton3:hover .infoboton-box3{
+    display: inline-block;
+
+}
+
+.infoboton4:hover .infoboton-box4{
     display: inline-block;
 
 }
@@ -467,7 +508,7 @@ nav{
     position: absolute;
     bottom: 41px;
     left: 210px;
-} 
+}
 .infoboton-box2{
     color: black;
     background-color: #D0D3D4;
@@ -480,7 +521,7 @@ nav{
     left: 455px;
     width: 150px;
     bottom: -10px;
-    
+
 }
 .infoboton-box2::after {
 
@@ -491,7 +532,7 @@ nav{
     position: absolute;
     bottom: 3px;
     left: -10px;
-} 
+}
 .infoboton-box3{
     color: black;
     background-color: #D0D3D4;
@@ -502,7 +543,7 @@ nav{
     position: absolute;
     left: 870px;
     width: 200px;
-    
+
 }
 .infoboton-box3::after {
     content: "";
@@ -512,8 +553,30 @@ nav{
     border-top: 10px solid transparent;
     position: absolute;
     bottom: 5px;
-    left: -11px;    
-} 
+    left: -11px;
+}
+.infoboton-box4{
+    color: black;
+    background-color: #D0D3D4;
+    font-size: 11px;
+    z-index: 50;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 870px;
+    width: 200px;
+
+}
+.infoboton-box4::after {
+    content: "";
+    display: block;
+    border-right: 10px solid  #D0D3D4;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: absolute;
+    bottom: 5px;
+    left: -11px;
+}
 .subtitulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
@@ -535,7 +598,7 @@ nav{
     justify-content: center;
     position: relative;
     top: -25px;
-    
+
 
 } */
 
@@ -567,6 +630,12 @@ nav{
     top: -300px;
     z-index: 2;
 }
+#leyenda_tasa{
+    position: relative;
+}
+#leyenda_frecuencia{
+    position: relative;
+}
 .region{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -593,7 +662,7 @@ nav{
     position: relative;
     justify-content: center;
     top: 50px;
-} 
+}
 #TRegion{
     justify-content: center;
     text-align: center;
@@ -618,7 +687,7 @@ nav{
     position: absolute;
     justify-content: right;
     float: right;
-    top: 300px; 
+    top: 300px;
     left: 105px;
     margin: 1.5px;
     padding: 0px;
@@ -913,7 +982,7 @@ nav{
 }
 .infomapa4{
     position: absolute;
-    top: 300px; 
+    top: 300px;
     left: 105px;
     justify-content: right;
     float: right;
@@ -922,7 +991,7 @@ nav{
 }
 .infomapa2{
     position: absolute;
-    top: 300px; 
+    top: 300px;
     left: 105px;
     justify-content: right;
     float: right;
@@ -931,7 +1000,7 @@ nav{
 }
 .infomapa3{
     position: absolute;
-    top: 300px; 
+    top: 300px;
     left: 105px;
     justify-content: right;
     float: right;
@@ -1106,9 +1175,9 @@ nav{
 }
 #TRanking2016{
     position: relative;
-    top: 20px;
+    top: 15px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1119,9 +1188,9 @@ nav{
 }
 #TRanking2017{
     position: relative;
-    top: 20px;
+    top: 15px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1132,9 +1201,9 @@ nav{
 }
 #TRanking2018{
     position: relative;
-    top: 20px;
+    top: 15px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1145,9 +1214,9 @@ nav{
 }
 #TRanking2019{
     position: relative;
-    top: 20px;
+    top: 15px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1158,10 +1227,10 @@ nav{
 }
 #FRanking2016{
     position: relative;
-    top: -570px;
+    bottom: 675px;
     left: 150px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1172,10 +1241,10 @@ nav{
 }
 #FRanking2017{
     position: relative;
-    top: -570px;
+    bottom: 675px;
     left: 150px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1186,10 +1255,10 @@ nav{
 }
 #FRanking2018{
     position: relative;
-    top: -570px;
+    bottom: 675px;
     left: 150px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1200,10 +1269,10 @@ nav{
 }
 #FRanking2019{
     position: relative;
-    top: -570px;
+    bottom: 675px;
     left: 150px;
     width:300px;
-    height:255px; 
+    height:255px;
     margin:0px;
     padding: 5px;
     line-height: 7px;
@@ -1215,14 +1284,16 @@ nav{
 .nombre_mujer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    font-style: italic;
+    z-index: 10;
 }
 
 .conexion{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size: 15px;
-    width: 1000px;
+    width: 980px;
 }
 #cita{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1231,9 +1302,79 @@ nav{
     width: 800px;
     text-align: center;
     background-color: #5f367c;
-    height: 50px;
+    height: 70px;
     margin: 20px;
     padding: 10px;
-
+    position: relative;
+    left: 70px;
 }
 
+.texto_pie{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#48285f;
+    font-size: 12px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    left: 35px;
+
+}
+#Pie{
+    background-color:#d9d9d9;
+    width: 1200px;
+    height:170px;
+    grid-template-columns: 250px 350px 350px 250px;
+    display: grid;
+    position: relative;
+    top: 1000px;
+}
+.link_fuente:link{
+    text-decoration: none;
+        color:#48285f;
+}
+
+.link_fuente:visited{
+    text-decoration: none;
+    color: #48285f;
+}
+#conclusion{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 900px;
+    text-align: center;
+    background-color:#6d1d47;
+    height: 110px;
+    position: relative;
+    left: 92px;
+    
+
+}
+#marcela{
+    position: relative;
+    left:350px;
+}
+
+.imagen{
+    width: 500px;
+    position: relative;
+    left:250px;
+}
+
+.subtitulo_2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    left: 460px;
+
+}
+.conexion_2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    width: 450px;
+    position: relative;
+    left: 410px;
+}
